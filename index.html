@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buren van Artis</title>
+<meta name="description" content="Voor een leefbare buurt, open dialoog en echte participatie rond het Masterplan van Artis.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --groen-diep:#1E3D2F;    /* botanisch donkergroen */
+    --groen-blad:#2F7A50;    /* bladgroen */
+    --mint:#8FD9B6;          /* mintgroen accent (Instagram-stijl) */
+    --mint-licht:#EAF7F0;    /* lichte mint voor achtergronden */
+    --wit:#FFFFFF;
+    --flamingo:#E4667E;      /* de flamingo's van Artis, alleen voor de +1 */
+    --flamingo-donker:#C74560;
+    --inkt:#22302A;
+    --inkt-zacht:#5C6B62;
+    --lijn:#DDE9E0;
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{
+    margin:0; background:var(--mint-licht); color:var(--inkt);
+    font-family:'Karla',system-ui,sans-serif; font-size:17px; line-height:1.6;
+  }
+  a{color:var(--groen-blad)}
+  :focus-visible{outline:3px solid var(--groen-blad); outline-offset:2px; border-radius:4px}
+
+  /* ---------- kop ---------- */
+  header{
+    background:var(--groen-diep); color:#F4F7F2;
+    padding:2.6rem 1.25rem 2.2rem; text-align:center;
+    border-bottom:5px solid var(--mint);
+  }
+  .merk{font-family:'Fraunces',serif; font-weight:650; font-size:clamp(2rem,6vw,3rem); margin:0}
+  .merk .van{color:var(--mint); font-style:italic; font-weight:500}
+  .onderkop{margin:.6rem auto 0; max-width:44ch; color:#CFE0D2; font-size:1rem}
+
+  /* ---------- feed ---------- */
+  main{max-width:640px; margin:0 auto; padding:1.5rem 1rem 3rem}
+  .kaart{
+    background:var(--wit); border:1px solid var(--lijn); border-radius:var(--radius);
+    overflow:hidden; margin:1.5rem 0; box-shadow:0 2px 10px rgba(30,61,47,.06);
+  }
+  .kaart-media img{display:block; width:100%; aspect-ratio:16/9; object-fit:cover}
+  .kaart-media .video{position:relative; width:100%; aspect-ratio:16/9}
+  .kaart-media iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
+  .kaart-body{padding:1.25rem 1.4rem 1.4rem}
+  .wenkbrauw{
+    display:flex; gap:.6rem; align-items:baseline; flex-wrap:wrap;
+    font-size:.8rem; letter-spacing:.12em; text-transform:uppercase; font-weight:700;
+    color:var(--groen-blad); margin-bottom:.4rem;
+  }
+  .wenkbrauw .datum{color:var(--inkt-zacht); letter-spacing:.04em; text-transform:none; font-weight:500}
+  .kaart h2{font-family:'Fraunces',serif; font-weight:650; font-size:1.5rem; line-height:1.25; margin:.1rem 0 .6rem}
+  .kaart p{margin:.8rem 0}
+
+  /* ---------- tags ---------- */
+  .tags{display:flex; flex-wrap:wrap; gap:.4rem; margin-top:1rem}
+  .tag{
+    background:var(--mint-licht); border:1px solid var(--mint);
+    color:var(--groen-diep); font-size:.8rem; font-weight:700;
+    padding:.15rem .65rem; border-radius:999px;
+  }
+
+  /* ---------- extra knoppen in het bericht ---------- */
+  .acties{display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1rem}
+  .knop{
+    display:inline-block; text-decoration:none; font-weight:700; font-size:.95rem;
+    padding:.6rem 1.1rem; border-radius:999px; border:2px solid var(--groen-diep);
+    color:var(--groen-diep); background:transparent;
+    transition:transform .12s ease, background .12s ease, color .12s ease;
+  }
+  .knop:hover{background:var(--groen-diep); color:#fff}
+  .knop:active{transform:scale(.97)}
+
+  /* ---------- vaste actiebalk onder elk bericht ---------- */
+  .steun{
+    display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;
+    margin-top:1.2rem; padding-top:1rem; border-top:1px dashed var(--lijn);
+  }
+  .steun > *{flex-shrink:0}
+  .plusje{
+    position:relative; display:inline-flex; align-items:center; gap:.4rem;
+    background:#fff; border:2px solid var(--flamingo); color:var(--flamingo-donker);
+    font:inherit; font-weight:700; font-size:.92rem; padding:.5rem .95rem; border-radius:999px; cursor:pointer;
+    transition:background .15s ease, color .15s ease;
+  }
+  .plusje:hover{background:#FDEFF2}
+  .plusje[aria-pressed="true"]{background:var(--flamingo); color:#fff; cursor:default}
+  .vogel{position:absolute; left:50%; top:-4px; transform:translateX(-50%); font-size:1.3rem; opacity:0; pointer-events:none}
+  @keyframes opvliegen{
+    0%{opacity:0; transform:translate(-50%,0) rotate(0deg)}
+    20%{opacity:1}
+    100%{opacity:0; transform:translate(-50%,-60px) rotate(-12deg)}
+  }
+  .vogel.vlieg{animation:opvliegen .9s ease-out forwards}
+
+  .helpmee{
+    display:inline-flex; align-items:center; gap:.4rem; text-decoration:none;
+    background:var(--groen-blad); color:#fff; font-weight:700; font-size:.92rem;
+    padding:.55rem 1.05rem; border-radius:999px; border:2px solid var(--groen-blad);
+    transition:background .15s ease;
+  }
+  .helpmee:hover{background:var(--groen-diep); border-color:var(--groen-diep)}
+
+  .delen{display:inline-flex; gap:.4rem; margin-left:auto}
+  .deel{
+    display:inline-flex; align-items:center; gap:.3rem; text-decoration:none;
+    background:var(--mint-licht); border:1px solid var(--mint); color:var(--groen-diep);
+    font-weight:700; font-size:.85rem; padding:.45rem .8rem; border-radius:999px;
+  }
+  .deel:hover{background:var(--mint)}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto}
+    .vogel.vlieg{animation:none}
+    .knop,.plusje,.helpmee{transition:none}
+  }
+  @media (max-width:480px){
+    .delen{margin-left:0}
+  }
+
+  /* ---------- aanmelden ---------- */
+  .aanmelden{
+    background:var(--groen-diep); color:#F4F7F2; border-radius:var(--radius);
+    padding:1.6rem 1.4rem; margin-top:2.5rem; text-align:center;
+  }
+  .aanmelden h2{font-family:'Fraunces',serif; font-weight:650; margin:0 0 .3rem; font-size:1.4rem}
+  .aanmelden p{margin:.3rem 0 1rem; color:#CFE0D2; font-size:.95rem}
+  .aanmelden form{display:flex; gap:.5rem; max-width:420px; margin:0 auto; flex-wrap:wrap; justify-content:center}
+  .aanmelden input[type=email]{flex:1 1 220px; padding:.7rem 1rem; border-radius:999px; border:0; font:inherit; font-size:.95rem}
+  .aanmelden button{
+    font:inherit; font-weight:700; border:0; border-radius:999px;
+    padding:.7rem 1.3rem; background:var(--mint); color:var(--groen-diep); cursor:pointer;
+  }
+  .aanmelden button:hover{background:#fff}
+
+  footer{max-width:640px; margin:0 auto; padding:0 1rem 2.5rem; text-align:center; color:var(--inkt-zacht); font-size:.85rem}
+</style>
+</head>
+<body>
+
+<header>
+  <h1 class="merk">Buren <span class="van">van</span> Artis</h1>
+  <p class="onderkop">🌳 Voor een leefbare buurt, open dialoog &amp; echte participatie. We houden het gesprek feitelijk en constructief.</p>
+</header>
+
+<main>
+  <div id="feed" aria-live="polite"></div>
+
+  <section class="aanmelden" id="aanmelden">
+    <h2>Mis geen bericht</h2>
+    <p>Meld je aan en ontvang een mailtje bij elk nieuw buurtbericht.</p>
+    <form id="aanmeldformulier" method="post" target="_blank">
+      <label for="email" style="position:absolute;left:-9999px">E-mailadres</label>
+      <input type="email" id="email" name="email" placeholder="jouw@email.nl" required>
+      <button type="submit">Aanmelden</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>Buren van Artis · Amsterdam · <a href="mailto:artis-omwonenden@proton.me">artis-omwonenden@proton.me</a></p>
+</footer>
+
+<script src="posts.js"></script>
+<script>
+/* ================= INSTELLINGEN ================= */
+const TIKKIE_URL = "https://tikkie.me/pay/VOORBEELD"; // jullie echte Tikkie-link (procesfonds)
+const BUTTONDOWN_GEBRUIKER = "";  // Buttondown-gebruikersnaam voor e-mailaanmeldingen
+const SUPABASE_URL = "";          // bijv. https://xxxx.supabase.co (gedeelde +1-tellers)
+const SUPABASE_KEY = "";          // de "anon public" sleutel van Supabase
+const TOON_GEPLANDE = true;       // true = alle berichten tonen; false = berichten met een
+                                  // datum in de toekomst verschijnen pas op die dag
+/* ================================================ */
+
+const MAANDEN = ["januari","februari","maart","april","mei","juni","juli","augustus","september","oktober","november","december"];
+
+function nlDatum(iso){
+  const d = new Date(iso + "T00:00:00");
+  return `${d.getDate()} ${MAANDEN[d.getMonth()]} ${d.getFullYear()}`;
+}
+function weekNr(iso){
+  const d = new Date(iso + "T00:00:00");
+  const t = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const dag = (t.getUTCDay() + 6) % 7;
+  t.setUTCDate(t.getUTCDate() - dag + 3);
+  const eersteDonderdag = t.valueOf();
+  t.setUTCMonth(0, 1);
+  if (t.getUTCDay() !== 4) t.setUTCMonth(0, 1 + ((4 - t.getUTCDay()) + 7) % 7);
+  return 1 + Math.round((eersteDonderdag - t) / 604800000);
+}
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, c =>
+    ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+}
+
+// ---------- feed opbouwen ----------
+const vandaag = new Date(); vandaag.setHours(23,59,59);
+const zichtbaar = POSTS
+  .filter(p => TOON_GEPLANDE || new Date(p.datum + "T00:00:00") <= vandaag)
+  .sort((a,b) => b.datum.localeCompare(a.datum));
+
+const feed = document.getElementById("feed");
+zichtbaar.forEach(post => {
+  const kaart = document.createElement("article");
+  kaart.className = "kaart";
+  kaart.id = "post-" + post.id;
+
+  let media = "";
+  if (post.youtube) {
+    media = `<div class="kaart-media"><div class="video">
+      <iframe src="https://www.youtube-nocookie.com/embed/${post.youtube}"
+        title="${escapeHtml(post.titel)}" loading="lazy" allowfullscreen
+        allow="accelerometer; encrypted-media; picture-in-picture"></iframe>
+    </div></div>`;
+  } else if (post.afbeelding) {
+    media = `<div class="kaart-media"><img src="${post.afbeelding}" alt="" loading="lazy"></div>`;
+  }
+
+  const alineas = (post.tekst || "").split("\n\n").map(a => `<p>${escapeHtml(a)}</p>`).join("");
+
+  const knoppen = (post.knoppen || []).map(k =>
+    `<a class="knop" href="${k.url}" target="_blank" rel="noopener">${escapeHtml(k.label)}</a>`
+  ).join("");
+
+  const tags = (post.tags || []).map(t => `<span class="tag">#${escapeHtml(t)}</span>`).join("");
+
+  const postUrl = location.origin + location.pathname + "#post-" + post.id;
+  const deelTekst = encodeURIComponent(post.titel + " — Buren van Artis\n" + postUrl);
+  const mailOnderwerp = encodeURIComponent(post.titel + " — Buren van Artis");
+  const mailBody = encodeURIComponent("Dit bericht van Buren van Artis is misschien interessant voor je:\n\n" + post.titel + "\n" + postUrl);
+
+  kaart.innerHTML = `
+    ${media}
+    <div class="kaart-body">
+      <div class="wenkbrauw"><span>Week ${weekNr(post.datum)}</span><span class="datum">${nlDatum(post.datum)}</span></div>
+      <h2>${escapeHtml(post.titel)}</h2>
+      ${alineas}
+      ${knoppen ? `<div class="acties">${knoppen}</div>` : ""}
+      ${tags ? `<div class="tags">${tags}</div>` : ""}
+      <div class="steun">
+        <button class="plusje" data-post="${post.id}" aria-pressed="false">
+          <span class="vogel" aria-hidden="true">🦩</span>
+          🦩 +1 <span class="teller" data-teller="${post.id}">0</span>
+        </button>
+        <a class="helpmee" href="${TIKKIE_URL}" target="_blank" rel="noopener">💚 Help mee!</a>
+        <span class="delen">
+          <a class="deel" href="https://wa.me/?text=${deelTekst}" target="_blank" rel="noopener" aria-label="Deel via WhatsApp">📱 WhatsApp</a>
+          <a class="deel" href="mailto:?subject=${mailOnderwerp}&body=${mailBody}" aria-label="Deel via e-mail">✉️ E-mail</a>
+        </span>
+      </div>
+    </div>`;
+  feed.appendChild(kaart);
+});
+
+// ---------- +1 (plus-één) ----------
+const supabaseAan = SUPABASE_URL && SUPABASE_KEY;
+
+async function laadTellers(){
+  if (supabaseAan) {
+    try {
+      const r = await fetch(`${SUPABASE_URL}/rest/v1/likes?select=post_id,count`, {
+        headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}` }
+      });
+      (await r.json()).forEach(rij => zetTeller(rij.post_id, rij.count));
+    } catch(e){ console.warn("Kon tellers niet laden", e); }
+  } else {
+    zichtbaar.forEach(p => zetTeller(p.id, Number(localStorage.getItem("teller_" + p.id) || 0)));
+  }
+  zichtbaar.forEach(p => {
+    if (localStorage.getItem("plus_" + p.id)) {
+      const knop = document.querySelector(`.plusje[data-post="${p.id}"]`);
+      if (knop) knop.setAttribute("aria-pressed", "true");
+    }
+  });
+}
+function zetTeller(id, n){
+  const el = document.querySelector(`[data-teller="${id}"]`);
+  if (el) el.textContent = n;
+}
+document.addEventListener("click", async e => {
+  const knop = e.target.closest(".plusje");
+  if (!knop || knop.getAttribute("aria-pressed") === "true") return;
+  const id = knop.dataset.post;
+  knop.setAttribute("aria-pressed", "true");
+  localStorage.setItem("plus_" + id, "1");
+
+  const vogel = knop.querySelector(".vogel");
+  vogel.classList.remove("vlieg"); void vogel.offsetWidth; vogel.classList.add("vlieg");
+
+  const el = document.querySelector(`[data-teller="${id}"]`);
+  const nieuw = Number(el.textContent || 0) + 1;
+  zetTeller(id, nieuw);
+
+  if (supabaseAan) {
+    try {
+      await fetch(`${SUPABASE_URL}/rest/v1/rpc/plus_een`, {
+        method: "POST",
+        headers: { apikey: SUPABASE_KEY, Authorization: `Bearer ${SUPABASE_KEY}`, "Content-Type": "application/json" },
+        body: JSON.stringify({ p_post_id: id })
+      });
+    } catch(e){ console.warn("Kon +1 niet opslaan", e); }
+  } else {
+    localStorage.setItem("teller_" + id, nieuw);
+  }
+});
+laadTellers();
+
+// ---------- e-mailaanmelding ----------
+const formulier = document.getElementById("aanmeldformulier");
+if (BUTTONDOWN_GEBRUIKER) {
+  formulier.action = `https://buttondown.email/api/emails/embed-subscribe/${BUTTONDOWN_GEBRUIKER}`;
+} else {
+  formulier.addEventListener("submit", e => {
+    e.preventDefault();
+    location.href = "mailto:artis-omwonenden@proton.me?subject=" +
+      encodeURIComponent("Aanmelden mailinglijst Buren van Artis") +
+      "&body=" + encodeURIComponent("Graag aanmelden op de mailinglijst: " + document.getElementById("email").value);
+  });
+}
+</script>
+</body>
+</html>
