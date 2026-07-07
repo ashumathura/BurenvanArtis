@@ -1,0 +1,239 @@
+:root{
+  /* GROEN (basis + acties) */
+  --groen:#00DA88;           /* basis, accenten, +1 gedrukt */
+  --groen-donker:#00A96B;    /* hoofd-CTA (Manifest), hover */
+  --groen-dieper:#008554;    /* hover van donkere CTA */
+  --groen-diep:#003D28;      /* koptekst-achtergrond, deep contrast */
+  --groen-licht:#E6FBF3;     /* tag-pillen, subtiele vlakken */
+
+  /* GRIJS (ondersteuning) */
+  --grijs:#9CA3AF;           /* ondersteunende tekst, dividers */
+  --grijs-licht:#E5E7EB;     /* randen */
+  --grijs-lichter:#F3F4F6;   /* deelknoppen achtergrond */
+  --grijs-donker:#374151;    /* fijnere body tekst */
+  --tekst:#111827;           /* koppen, primaire tekst */
+
+  /* NEUTRAAL */
+  --wit:#FFFFFF;
+  --achtergrond:#F9FAFB;
+
+  --radius:16px;
+  --radius-klein:12px;
+  --schaduw:0 1px 3px rgba(17,24,39,.04), 0 4px 14px rgba(17,24,39,.06);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0; background:var(--achtergrond); color:var(--tekst);
+  font-family:'Poppins',system-ui,-apple-system,sans-serif;
+  font-size:16px; line-height:1.65; -webkit-font-smoothing:antialiased;
+}
+a{color:var(--groen-donker); text-decoration-thickness:1px; text-underline-offset:2px}
+:focus-visible{outline:3px solid var(--groen); outline-offset:2px; border-radius:6px}
+
+/* ---------- kop ---------- */
+header{
+  background:var(--groen-diep); color:#F4F7F2;
+  padding:2.8rem 1.25rem 2.4rem; text-align:center;
+  border-bottom:4px solid var(--groen);
+}
+.merk{
+  font-weight:700; font-size:clamp(2rem,6vw,3rem);
+  margin:0; letter-spacing:-.02em; line-height:1.1;
+}
+.merk .van{color:var(--groen); font-weight:500}
+.onderkop{
+  margin:.7rem auto 0; max-width:48ch;
+  color:#CFE8DA; font-size:.98rem; font-weight:400;
+}
+
+/* ---------- navigatie ---------- */
+.nav{display:flex; justify-content:center; gap:.5rem; margin-top:1.4rem; flex-wrap:wrap}
+.nav a{
+  color:#F4F7F2; text-decoration:none; font-weight:500; font-size:.92rem;
+  padding:.45rem 1.15rem; border-radius:999px;
+  border:1px solid rgba(255,255,255,.25);
+  transition:border-color .15s, background .15s, color .15s;
+}
+.nav a:hover{border-color:var(--groen)}
+.nav a.actief{
+  background:var(--groen); color:var(--groen-diep);
+  border-color:var(--groen); font-weight:600;
+}
+
+/* ---------- feed ---------- */
+main{max-width:640px; margin:0 auto; padding:1.5rem 1rem 3rem}
+.kaart{
+  background:var(--wit); border:1px solid var(--grijs-licht); border-radius:var(--radius);
+  overflow:hidden; margin:1.5rem 0; box-shadow:var(--schaduw);
+}
+/* 4/3 aspect ratio = ~33% taller than 16/9 → afbeeldingen ± 30% groter */
+.kaart-media img{display:block; width:100%; aspect-ratio:4/3; object-fit:cover}
+.kaart-media .video{position:relative; width:100%; aspect-ratio:4/3}
+.kaart-media iframe{position:absolute; inset:0; width:100%; height:100%; border:0}
+.kaart-body{padding:1.4rem 1.5rem 1.5rem}
+.wenkbrauw{
+  display:flex; gap:.6rem; align-items:baseline; flex-wrap:wrap;
+  font-size:.78rem; letter-spacing:.1em; text-transform:uppercase;
+  font-weight:600; color:var(--groen-donker); margin-bottom:.6rem;
+}
+.wenkbrauw .datum{color:var(--grijs); letter-spacing:.02em; text-transform:none; font-weight:500}
+.kaart h2{
+  font-weight:600; font-size:1.35rem; line-height:1.3;
+  margin:.1rem 0 .7rem; letter-spacing:-.01em; color:var(--tekst);
+}
+.kaart p{margin:.8rem 0; color:var(--grijs-donker)}
+
+/* ---------- tags ---------- */
+.tags{display:flex; flex-wrap:wrap; gap:.35rem; margin-top:1rem}
+.tag{
+  background:var(--groen-licht); color:var(--groen-diep);
+  font-size:.78rem; font-weight:500;
+  padding:.2rem .7rem; border-radius:999px;
+}
+
+/* ---------- primaire knoppen (Manifest e.d.) ---------- */
+.acties{display:flex; flex-wrap:wrap; gap:.6rem; margin-top:1.1rem}
+.knop{
+  display:inline-block; text-decoration:none;
+  font-family:'Poppins',sans-serif; font-weight:600; font-size:.95rem;
+  padding:.7rem 1.25rem; border-radius:999px;
+  background:var(--groen-donker); color:var(--wit); border:0;
+  transition:background .15s, transform .12s;
+}
+.knop:hover{background:var(--groen-dieper); color:var(--wit)}
+.knop:active{transform:scale(.97)}
+
+/* ---------- vaste actiebalk onder elk bericht ---------- */
+.steun{
+  display:flex; align-items:center; gap:.5rem; flex-wrap:wrap;
+  margin-top:1.3rem; padding-top:1.1rem; border-top:1px solid var(--grijs-licht);
+}
+.steun > *{flex-shrink:0}
+
+.plusje{
+  position:relative; display:inline-flex; align-items:center; gap:.4rem;
+  background:var(--wit); border:1.5px solid var(--grijs-licht);
+  color:var(--grijs-donker);
+  font-family:'Poppins',sans-serif; font-weight:600; font-size:.9rem;
+  padding:.5rem .95rem; border-radius:999px; cursor:pointer;
+  transition:border-color .15s, color .15s, background .15s;
+}
+.plusje:hover{border-color:var(--groen); color:var(--groen-donker)}
+.plusje[aria-pressed="true"]{
+  background:var(--groen); border-color:var(--groen);
+  color:var(--groen-diep); cursor:default;
+}
+.vogel{
+  position:absolute; left:50%; top:-4px; transform:translateX(-50%);
+  font-size:1.3rem; opacity:0; pointer-events:none;
+}
+@keyframes opvliegen{
+  0%{opacity:0; transform:translate(-50%,0) rotate(0deg)}
+  20%{opacity:1}
+  100%{opacity:0; transform:translate(-50%,-60px) rotate(-12deg)}
+}
+.vogel.vlieg{animation:opvliegen .9s ease-out forwards}
+
+.helpmee{
+  display:inline-flex; align-items:center; gap:.4rem; text-decoration:none;
+  background:var(--groen); color:var(--groen-diep);
+  font-weight:600; font-size:.9rem;
+  padding:.55rem 1.05rem; border-radius:999px;
+  border:1.5px solid var(--groen);
+  transition:background .15s, color .15s, border-color .15s;
+}
+.helpmee:hover{background:var(--groen-donker); border-color:var(--groen-donker); color:var(--wit)}
+
+.delen{display:inline-flex; gap:.35rem; margin-left:auto}
+.deel{
+  display:inline-flex; align-items:center; gap:.3rem; text-decoration:none;
+  background:var(--grijs-lichter); color:var(--grijs-donker);
+  font-weight:500; font-size:.82rem;
+  padding:.45rem .8rem; border-radius:999px;
+  border:1px solid transparent;
+  transition:background .15s, color .15s, border-color .15s;
+}
+.deel:hover{background:var(--groen-licht); color:var(--groen-diep); border-color:var(--groen-licht)}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .vogel.vlieg{animation:none}
+  .knop,.plusje,.helpmee,.deel{transition:none}
+}
+@media (max-width:480px){
+  .delen{margin-left:0}
+  .kaart-body{padding:1.2rem 1.25rem 1.3rem}
+}
+
+/* ---------- aanmelden ---------- */
+.aanmelden{
+  background:var(--groen-diep); color:#F4F7F2;
+  border-radius:var(--radius); padding:1.8rem 1.5rem;
+  margin-top:2.5rem; text-align:center;
+}
+.aanmelden h2{
+  font-weight:600; margin:0 0 .3rem; font-size:1.35rem;
+  color:var(--wit); letter-spacing:-.01em;
+}
+.aanmelden p{margin:.3rem 0 1.2rem; color:#CFE8DA; font-size:.95rem}
+.aanmelden form{
+  display:flex; gap:.5rem; max-width:440px; margin:0 auto;
+  flex-wrap:wrap; justify-content:center;
+}
+.aanmelden input[type=email]{
+  flex:1 1 220px; padding:.75rem 1.1rem; border-radius:999px; border:0;
+  font-family:'Poppins',sans-serif; font-size:.95rem; color:var(--tekst);
+}
+.aanmelden button{
+  font-family:'Poppins',sans-serif; font-weight:600; border:0; border-radius:999px;
+  padding:.75rem 1.4rem; background:var(--groen); color:var(--groen-diep);
+  font-size:.95rem; cursor:pointer;
+  transition:background .15s, color .15s;
+}
+.aanmelden button:hover{background:var(--wit)}
+
+footer{
+  max-width:640px; margin:0 auto;
+  padding:0 1rem 2.5rem; text-align:center;
+  color:var(--grijs); font-size:.85rem;
+}
+footer a{color:var(--grijs-donker)}
+
+/* ---------- doelenpagina ---------- */
+.intro{
+  max-width:56ch; margin:1.8rem auto .5rem;
+  text-align:center; color:var(--grijs-donker); font-size:1.02rem;
+}
+.doel{
+  background:var(--wit); border:1px solid var(--grijs-licht);
+  border-radius:var(--radius); padding:1.4rem 1.5rem;
+  margin:1.1rem 0; display:flex; gap:1.1rem; align-items:flex-start;
+  box-shadow:var(--schaduw);
+}
+.doel .nummer{
+  flex-shrink:0; width:2.6rem; height:2.6rem; border-radius:50%;
+  background:var(--groen-licht); color:var(--groen-diep);
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:1.15rem;
+}
+.doel h2{
+  font-weight:600; font-size:1.2rem; line-height:1.35;
+  margin:.2rem 0 .5rem; letter-spacing:-.01em; color:var(--tekst);
+}
+.doel p{margin:.5rem 0; color:var(--grijs-donker)}
+.positionering{
+  background:var(--groen-diep); color:#F4F7F2;
+  border-radius:var(--radius); padding:1.7rem 1.6rem;
+  margin-top:2rem;
+}
+.positionering h2{
+  font-weight:600; font-size:1.35rem; margin:0 0 .6rem;
+  color:var(--groen); letter-spacing:-.01em;
+}
+.positionering p{margin:.6rem 0; color:#E4EFE7}
+.doelen-acties{
+  display:flex; justify-content:center; gap:.7rem;
+  flex-wrap:wrap; margin-top:1.8rem;
+}

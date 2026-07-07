@@ -2,14 +2,25 @@
 
 Wekelijkse buurtberichten over het Masterplan van Artis — statische site voor GitHub Pages.
 
+## Bestanden
+
+| Bestand | Doel |
+|---|---|
+| `index.html` | de berichtenfeed |
+| `doelen.html` | pagina "Onze doelen" (7 doelen + positionering) |
+| `stijl.css` | gedeelde vormgeving van beide pagina's |
+| `instellingen.js` | alle instellingen op één plek (Tikkie, Buttondown, Supabase, planning) |
+| `posts.js` | de berichten — dit bestand bewerk je wekelijks |
+| `images/` | eigen foto's voor bij de berichten |
+
 ## Eenmalige setup
 
-1. Upload `index.html`, `posts.js` en de map `images/` naar deze repository
+1. Upload alle bestanden hierboven naar deze repository
    (github.com: **Add file → Upload files**).
 2. **Settings → Pages → Branch: main / (root) → Save.**
 3. Na ± 1 minuut live op `https://ashumathura.github.io/BurenvanArtis/`
 
-## Instellingen (bovenin index.html)
+## Instellingen (in instellingen.js)
 
 | Variabele | Doel |
 |---|---|
@@ -19,6 +30,8 @@ Wekelijkse buurtberichten over het Masterplan van Artis — statische site voor 
 | `TOON_GEPLANDE` | `true` = alle berichten direct zichtbaar; `false` = berichten verschijnen automatisch pas op hun datum (wekelijkse planning!) |
 
 In `posts.js` staat bovenin ook `MANIFEST_URL` — vervang die door de echte Linktree/manifest-link.
+
+De Tikkie-knop op de doelenpagina gebruikt automatisch dezelfde `TIKKIE_URL`.
 
 ## Wekelijks bericht plaatsen
 
@@ -50,5 +63,23 @@ $$;
 grant execute on function plus_een(text) to anon;
 ```
 
-Daarna `SUPABASE_URL` en `SUPABASE_KEY` invullen in `index.html`
+Daarna `SUPABASE_URL` en `SUPABASE_KEY` invullen in `instellingen.js`
 (Project Settings → API → Project URL en anon public key).
+
+
+## Design v3 (juli 2026)
+
+- **Typografie**: Poppins (400/500/600/700) — modern geometrisch sans.
+- **Basiskleur**: `#00DA88` (fris groen). Voor CTA-knoppen zoals *Teken het Manifest*
+  en *Help mee!*: `#00A96B` (donkerder groen). Voor deep contrast: `#003D28`.
+- **Ondersteunend**: `#9CA3AF` grijs voor secundaire tekst en `#E5E7EB` voor randen.
+- **Afbeeldingen**: 4/3 verhouding (± 30% groter dan Instagram-standaard).
+- **Actiehiërarchie per bericht**: Manifest-knop (alleen op zware posts) → Help mee!
+  Tikkie → +1 → delen. Zo staat de "grote vraag" alleen bij de posts die het aankunnen.
+
+## Copy-strategie voor de berichten
+
+Elk bericht volgt een vaste ritmiek: **haak** (concreet feit) → **jij-moment**
+(sensorisch, tweede persoon) → **context + haalbare alternatief** → **één CTA**.
+Vermijd stapels cijfers; kies één held-stat per bericht. Refereer consequent aan
+Masterplan 2034 en het bouwprogramma dat op de aanname van 2 miljoen bezoekers rust.
