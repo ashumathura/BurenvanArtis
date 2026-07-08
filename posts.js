@@ -372,7 +372,7 @@ Het argument dat "dynamic pricing" de piek zal spreiden, is in de hele attractie
 
 Wij vragen: leg in Masterplan 2034 een harde bovengrens vast die past bij 14 hectare in een woonwijk. Niet 2 miljoen. En niet ten koste van deze buurt.`,
     tags: ["Artis", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/druk1/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post1.png",
     knoppen: []
   }
 ];
