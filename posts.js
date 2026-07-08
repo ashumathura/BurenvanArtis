@@ -23,7 +23,7 @@ const POSTS = [
   // ---------- POST 18 (nieuwste) — Doe mee ----------
   {
     id: "2026-11-03",
-    datum: "2026-10-03",
+    datum: "2026-11-03",
     titel: "Wat één huishouden niet kan, kunnen 240 huishoudens wél. Maar dan moet je nu meedoen.",
     tekst:
 `Als jij vandaag niets doet, ligt de eerste vergunning voor Masterplan 2034 er over enkele maanden. Dan wordt de eerste steen gemetseld voor 14 meter aan onze kade. En als die er staat, staat hij er honderd jaar. Onze kinderen zullen ons vragen waarom we het lieten gebeuren.
@@ -47,7 +47,7 @@ Samen krijgen we Masterplan 2034 terug op de tekentafel voor een plan dat past b
   // ---------- POST 17 — Gemeente ----------
   {
     id: "2026-10-27",
-    datum: "2026-9-27",
+    datum: "2026-10-27",
     titel: "Amsterdam wil onder 20 miljoen toeristen. Zit al op 26 miljoen. En de Plantagebuurt moet er nog meer bij nemen?",
     tekst:
 `Je woont hier omdat de Plantagebuurt geen Museumplein is. Masterplan 2034 verandert dat in tien jaar tijd — met gemeentelijke akkoorden erbij.
@@ -67,7 +67,7 @@ Wij eisen dat de gemeente haar rol als toezichthouder serieus neemt. Deel dit be
   // ---------- POST 16 — Participatie ----------
   {
     id: "2026-10-20",
-    datum: "2026-9-20",
+    datum: "2026-10-20",
     titel: "Op de laatste bewonersavond zag de helft geen verbetering. Of vond het slechter. Toch gaat het door.",
     tekst:
 `Herinner je die keer dat een leidinggevende naar je mening vroeg en er niets mee deed. Nu op wijkschaal. Nu permanent.
@@ -87,7 +87,7 @@ Was jij bij de bewonersavonden en werd je gehoord? Of niet? Mail je ervaring naa
   // ---------- POST 15 — WKO / douches (Manifest) ----------
   {
     id: "2026-10-13",
-    datum: "2026-9-13",
+    datum: "2026-10-13",
     titel: "Van het gas af? 100% steun. Maar waarom moet er ook een personeelsdouche in dat gebouw?",
     tekst:
 `Als jij thuis je cv-ketel vervangt door een warmtepomp, bouw je er dan een badkamer omheen? Waarom mag Artis dat wel — op jouw kade?
@@ -107,7 +107,7 @@ Onderteken het Manifest. Steun de WKO, verwerp de sluipende hoogbouw op onze kad
   // ---------- POST 14 — Groenwassen ----------
   {
     id: "2026-10-06",
-    datum: "2026-9-06",
+    datum: "2026-10-06",
     titel: "\"Natuurinclusief.\" \"Groene daktuinen.\" 14 meter hoog. 74 meter lang. Wij trappen er niet in.",
     tekst:
 `Loop straks langs een muur van 4,5 verdieping hoog. Bekijk het klimplantje op de gevel. Vraag jezelf af of dit is wat er wordt bedoeld met "natuurinclusieve stad" — of dat je voor de gek wordt gehouden.
@@ -127,7 +127,7 @@ Deel dit bericht als je genoeg hebt van groenwas-marketing die onze buurt kost.`
   // ---------- POST 13 — 8m eis (Manifest) ----------
   {
     id: "2026-09-29",
-    datum: "2026-08-29",
+    datum: "2026-09-29",
     titel: "Onze eis is één cijfer: 8 meter. Niet hoger. Voor iedereen die hier over 20 jaar nog wil wonen.",
     tekst:
 `Sta op je stoep en kijk omhoog. 8 meter is 2,5 verdieping — de hoogte van de historische panden op het Entrepotdok. 14 meter is 4,5 verdieping. Het verschil is: zon of geen zon. Ademen of ademnood. Historische wijk of stedelijk ravijn.
@@ -147,7 +147,7 @@ Onderteken het Manifest Behoud Plantagebuurt. Eén cijfer, één harde regel, é
   // ---------- POST 12 — Verkeersinfarct ----------
   {
     id: "2026-09-22",
-    datum: "2026-08-22",
+    datum: "2026-09-22",
     titel: "Een grotere parkeergarage voor bezoekersgroei = auto's die 24/7 onze wijk doorkruisen.",
     tekst:
 `Het is een dinsdagochtend. Je fietst je zoon naar school over de Plantage Kerklaan. Voor je: een SUV met buitenlands kenteken schuin geparkeerd. Naast je: een leverancier die achteruit een steegje in probeert. Achter je: nog een auto die je bel niet hoort. Je zoon houdt zich stevig vast.
@@ -165,7 +165,7 @@ Onze vraag: onafhankelijke contra-expertise op de verkeers- en parkeernormen, v�
   // ---------- POST 11 — Salmplein 10 jaar ----------
   {
     id: "2026-09-15",
-    datum: "2026-08-15",
+    datum: "2026-09-15",
     titel: "\"Tijdelijk\" horecapaviljoen op het Salmplein. Vergunning aangevraagd voor 10 jaar. Zo tijdelijk als je basisschool.",
     tekst:
 `Onthoud dit woord: tijdelijk. Een kind dat in 2026 leert lezen, doet in 2036 eindexamen. Zo tijdelijk. En binnen die tien jaar wordt "tijdelijk" gewoon "vast" — dat is het patroon in Amsterdam.
@@ -185,7 +185,7 @@ Onze eis aan de gemeente: handhaaf. Een afspraak is een afspraak.`,
   // ---------- POST 10 — Pretpark vs dierenwelzijn ----------
   {
     id: "2026-09-08",
-    datum: "2026-08-08",
+    datum: "2026-09-08",
     titel: "De Partij voor de Dieren waarschuwde het al: dit plan gaat over horeca, kantoren en installaties. Niet over dieren.",
     tekst:
 `Denk aan de foto's van Artis uit je jeugd — of die van je ouders. Groen. Ruim. Dieren op de voorgrond. Blader nu door Masterplan 2034: rendering na rendering van gebouwen. Kantoorruimte. Duurdere horeca. Nauwelijks meer dierenverblijven.
@@ -205,7 +205,7 @@ Deel dit bericht met iemand die vroeger nog gewoon naar Artis ging. Vraag hoe zi
   // ---------- POST 9 — Dominosteen (Manifest) ----------
   {
     id: "2026-09-01",
-    datum: "2026-08-01",
+    datum: "2026-09-01",
     titel: "Als het Dienstengebouw op 14 meter komt, ligt er een precedent voor de rest van het park. Voor 100 jaar.",
     tekst:
 `Loop straks langs het huis waar je vroeger op kraamvisite kwam. Kijk naar de horizon boven het park. Straks staat daar een muur van 14 meter. Bij de volgende bouwlocatie: nog een muur. Bij de derde: een vesting. Bij de vijfde: onze buurt is niet meer te herkennen.
@@ -225,7 +225,7 @@ Lees ons volledige bezwaarschrift en onderteken.`,
   // ---------- POST 8 — Horecaplein ----------
   {
     id: "2026-08-25",
-    datum: "2026-07-25",
+    datum: "2026-08-25",
     titel: "Acht horecagelegenheden telt Artis nu al. Masterplan 2034 wil er meer. Voor €30 per volwassene, uiteraard.",
     tekst:
 `Onthoud die keer dat je door Artis liep en iemand hoorde zeggen: "waar zijn de dieren eigenlijk?". Straks weet je waarom.
@@ -245,7 +245,7 @@ Wij eisen dat de gemeente de plannen strikt aan díe doelen toetst — niet aan 
   // ---------- POST 7 — Zonlicht / schaduw (Manifest) ----------
   {
     id: "2026-08-18",
-    datum: "2026-07-18",
+    datum: "2026-08-18",
     titel: "Vanaf 15:00 is de zon van de Entrepotdokkade. Voor altijd. Voor de kade die niets kost om te bezoeken.",
     tekst:
 `Warme dinsdagavond. Je haalt een broodje. Zoekt een plek op de kade. Er is geen zon meer, sinds vanmiddag niet. En jij weet: morgen weer zo. En volgende zomer. En de zomer daarna.
@@ -265,7 +265,7 @@ Onderteken ons Manifest. Help ons de zon terug te vechten voordat de muur er sta
   // ---------- POST 6 — Galm / klankkast ----------
   {
     id: "2026-08-11",
-    datum: "2026-07-11",
+    datum: "2026-08-11",
     titel: "Twee stenen muren aan het water werken als een klankkast. Vraag maar aan de bewoners van Aquartis.",
     tekst:
 `Je zit op je balkon aan het Entrepotdok. Iemand roept twee bruggen verderop. Je hoort het alsof het naast je is. Dit gaat niet weg. Dit is elke ochtend, elke avond, elk feestje op de kade. En het is niet terug te draaien nadat de muur er staat.
@@ -283,7 +283,7 @@ Onze vraag: een onafhankelijk akoestisch onderzoek vóórdat de bouw onherroepel
   // ---------- POST 5 — WKO mug ----------
   {
     id: "2026-08-04",
-    datum: "2026-07-04",
+    datum: "2026-08-04",
     titel: "40 dB is wat 's nachts nog mag. Dat is exact de zoem van een mug. Elke nacht. Voor altijd.",
     tekst:
 `Zomeravond. Raam open. Je hebt bijna slaap. En dan hoor je het — bzzzz. Alleen: deze mug zit niet in je slaapkamer. Hij zit in het WKO-gebouw van Artis. En hij vliegt nooit weg. Niet vanavond, niet morgen, niet volgend jaar. Nooit meer.
@@ -303,7 +303,7 @@ Verduurzaming steunen we volledig. Slaaploos wakker liggen aan een mug die nooit
   // ---------- POST 4 — Kalverstraat verkeer ----------
   {
     id: "2026-07-28",
-    datum: "2026-06-28",
+    datum: "2026-07-28",
     titel: "Op een topdag straks: 3.000 auto's + 4.000 fietsen extra. Elke zomerdag. Door onze woonwijk.",
     tekst:
 `Denk aan de laatste keer dat je je boodschappentas omhoog moest houden om langs een geparkeerde bakfiets te komen. Vermenigvuldig dat met vier. Nu je moeder die met de rollator wil oversteken. Nu een ambulance die het gaspedaal ingedrukt houdt en niet vooruitkomt.
@@ -323,7 +323,7 @@ Onze vraag: onafhankelijke contra-expertise op de verkeersparagraaf van Masterpl
   // ---------- POST 3 — 10.000 mensen ----------
   {
     id: "2026-07-21",
-    datum: "2026-06-21",
+    datum: "2026-07-21",
     titel: "10.000 mensen per dag door de Plantagebuurt. Dat is heel Monnickendam. Elke dag. In jouw straat.",
     tekst:
 `Bakfiets naar de crèche. Achter je een school. Voor je 10.000 mensen die de ingang zoeken. Kinderen die tussen benen door proberen te komen. Fietsers die schreeuwen. Een ambulance die je pas hoort als hij vlak achter je is.
@@ -343,7 +343,7 @@ Herken je dit al? Geef een +1 en deel het bericht met één buur. Straks doen we
   // ---------- POST 2 — Ruimte-paradox ----------
   {
     id: "2026-07-14",
-    datum: "2026-06-14",
+    datum: "2026-07-14",
     titel: "Blijdorp: 26 hectare, 1,5 miljoen. Artis: 14 hectare, wil 2 miljoen. De drukste dierentuin per m² van Nederland — dat wíllen ze zijn.",
     tekst:
 `Loop straks een blokje om je huis heen. Elke vierkante meter tussen jouw voordeur en het einde van je straat gaat straks meer bezoekers dragen dan Blijdorp — dat op de rand van de stad ligt, met eigen parkeerterreinen ter grootte van een half stadion.
@@ -361,7 +361,7 @@ Ken jij iemand die om de hoek van Artis woont, of vroeger woonde? Stuur ze dit b
   // ---------- POST 1 (oudste) — 2M bezoekers ----------
   {
     id: "2026-07-07",
-    datum: "2026-06-07",
+    datum: "2026-07-07",
     titel: "1.271.612 bezoekers in 2025. Masterplan 2034 mikt op 2 miljoen. Om de drukste dierentuin per m² van het land te worden.",
     tekst:
 `Denk terug aan de drukste zomerse zaterdag die je vorig jaar meemaakte in de Plantage Kerklaan. Fietsen tussen de bakfietsen, bezoekers met plattegronden op je stoep, een kruispunt dat niet meer opschoot. Vermenigvuldig die dag met 1,6. Dagelijks, in de zomer. En elke dag krijgen we er meer stapels uitstoot bij van de auto's die op de nieuwe grotere parkeergarage afkomen.
