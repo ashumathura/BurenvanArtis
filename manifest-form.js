@@ -89,6 +89,7 @@
         form.style.display = "none";
         ok.style.display = "block";
         laadTeller();
+        if (typeof gtag === "function") gtag("event", "manifest_signed");
       } else if (r.status === 409) {
         toonFout("Dit e-mailadres heeft het manifest al ondertekend. Bedankt!");
       } else {

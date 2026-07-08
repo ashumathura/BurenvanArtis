@@ -68,6 +68,15 @@
   }
 }
 </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18309585962"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18309585962');
+</script>
 </head>
 <body>
 
@@ -190,7 +199,13 @@
 </footer>
 
 <script src="instellingen.js"></script>
-<script>document.getElementById("helpmee-doelen").href = TIKKIE_URL;</script>
+<script>
+  const helpmeeDoelen = document.getElementById("helpmee-doelen");
+  helpmeeDoelen.href = TIKKIE_URL;
+  helpmeeDoelen.addEventListener("click", () => {
+    if (typeof gtag === "function") gtag("event", "klik_help_mee");
+  });
+</script>
 <script src="manifest-form.js"></script>
 
 </body>
