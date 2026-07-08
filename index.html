@@ -68,6 +68,15 @@
   "publisher": { "@type": "Organization", "name": "Buren van Artis" }
 }
 </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18309585962"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18309585962');
+</script>
 </head>
 <body>
 
@@ -252,11 +261,21 @@ zichtbaar.forEach(post => {
 
 // Hero-band Manifest-knop koppelen aan de gedeelde MANIFEST_URL
 const heroManifest = document.getElementById("hero-manifest");
-if (heroManifest) heroManifest.href = "#manifest";
+if (heroManifest) {
+  heroManifest.href = "#manifest";
+  heroManifest.addEventListener("click", () => {
+    if (typeof gtag === "function") gtag("event", "klik_teken_manifest");
+  });
+}
 
 // Hero-band Help mee!-knop koppelen aan de gedeelde TIKKIE_URL
 const heroTikkie = document.getElementById("hero-tikkie");
 if (heroTikkie && typeof TIKKIE_URL === "string") heroTikkie.href = TIKKIE_URL;
+if (heroTikkie) {
+  heroTikkie.addEventListener("click", () => {
+    if (typeof gtag === "function") gtag("event", "klik_help_mee");
+  });
+}
 
 // ---------- JSON-LD structured data voor alle berichten (SEO) ----------
 (function emitPostSchema(){
@@ -325,6 +344,7 @@ document.addEventListener("click", async e => {
   const id = knop.dataset.post;
   knop.setAttribute("aria-pressed", "true");
   localStorage.setItem("plus_" + id, "1");
+  if (typeof gtag === "function") gtag("event", "klik_vind_ik_leuk", { post_id: id });
 
   const vogel = knop.querySelector(".vogel");
   vogel.classList.remove("vlieg"); void vogel.offsetWidth; vogel.classList.add("vlieg");
@@ -359,6 +379,9 @@ if (BUTTONDOWN_GEBRUIKER) {
       "&body=" + encodeURIComponent("Graag aanmelden op de mailinglijst: " + document.getElementById("email").value);
   });
 }
+formulier.addEventListener("submit", () => {
+  if (typeof gtag === "function") gtag("event", "klik_aanmelden");
+});
 </script>
 <script src="manifest-form.js"></script>
 </body>
