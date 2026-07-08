@@ -73,7 +73,7 @@
 
 <header>
   <h1 class="merk">Buren <span class="van">van</span> Artis</h1>
-  <p class="onderkop">🌳 Samen beschermen we ons unieke stukje Amsterdam! Wij pleiten voor een leefbare Plantagebuurt, bouwplannen op menselijke schaal en échte participatie. Constructief, feitelijk en samen sterk.</p>
+  <p class="onderkop">🌳 Voor een leefbare buurt, open dialoog &amp; echte participatie. We houden het gesprek feitelijk en constructief.</p>
   <nav class="nav">
     <a href="index.html" class="actief">Berichten</a>
     <a href="doelen.html">Onze doelen</a>
@@ -123,6 +123,33 @@
   </section>
 
   <div id="feed" aria-live="polite"></div>
+
+  <section class="manifest-sectie" id="manifest">
+    <h2>Teken het Manifest Behoud Plantagebuurt</h2>
+    <p id="manifest-teller" class="manifest-teller"></p>
+    <ul class="manifest-eisen">
+      <li><span>1</span><p><strong>Stop de groei</strong> naar 2 miljoen bezoekers.</p></li>
+      <li><span>2</span><p><strong>Max 8 meter hoog</strong> op de erfgrenzen van het park.</p></li>
+      <li><span>3</span><p><strong>Prioriteit voor dierenwelzijn en groen</strong>, niet voor commercie.</p></li>
+      <li><span>4</span><p><strong>Geen duurdere horeca</strong> en hogere toegangsprijzen.</p></li>
+    </ul>
+    <h3 style="color:#fff;font-weight:600;font-size:1rem;margin:0 0 1rem">Ik eis een leefbare buurt:</h3>
+    <form id="manifest-form" class="manifest-grid" novalidate>
+      <label>Voornaam <input type="text" name="voornaam" autocomplete="given-name" placeholder="Jan" required></label>
+      <label>Achternaam <input type="text" name="achternaam" autocomplete="family-name" placeholder="Jansen" required></label>
+      <label>Straatnaam en nummer <input type="text" name="straat" autocomplete="street-address" placeholder="Plantage Kerklaan 1" required></label>
+      <label>Postcode <input type="text" name="postcode" autocomplete="postal-code" placeholder="1018 AB" required></label>
+      <label>Stad <input type="text" name="stad" autocomplete="address-level2" placeholder="Amsterdam" required></label>
+      <label class="breed">E-mailadres <input type="email" name="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
+      <div id="manifest-fout" class="manifest-fout"></div>
+      <button type="submit" class="manifest-submit">Teken het manifest ✍️</button>
+    </form>
+    <div id="manifest-ok" class="manifest-ok">
+      <h3>Bedankt! ✊</h3>
+      <p>Je handtekening is geregistreerd. Samen maken we het verschil.</p>
+      <p>Deel dit manifest met je buren — hoe meer handtekeningen, hoe sterker ons mandaat.</p>
+    </div>
+  </section>
 
   <section class="aanmelden" id="aanmelden">
     <h2>Mis geen bericht</h2>
@@ -225,7 +252,7 @@ zichtbaar.forEach(post => {
 
 // Hero-band Manifest-knop koppelen aan de gedeelde MANIFEST_URL
 const heroManifest = document.getElementById("hero-manifest");
-if (heroManifest && typeof MANIFEST_URL === "string") heroManifest.href = MANIFEST_URL;
+if (heroManifest) heroManifest.href = "#manifest";
 
 // Hero-band Help mee!-knop koppelen aan de gedeelde TIKKIE_URL
 const heroTikkie = document.getElementById("hero-tikkie");
@@ -333,5 +360,6 @@ if (BUTTONDOWN_GEBRUIKER) {
   });
 }
 </script>
+<script src="manifest-form.js"></script>
 </body>
 </html>
