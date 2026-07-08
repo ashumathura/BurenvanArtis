@@ -16,7 +16,7 @@
 // ============================================================
 
 const MANIFEST_URL = "https://linktr.ee/VOORBEELD";  // Manifest / Linktree
-const CONTACT_EMAIL = "artis-omwonenden@proton.me";
+const CONTACT_EMAIL = "iksteun@burenvanartis.nl";
 
 const POSTS = [
 

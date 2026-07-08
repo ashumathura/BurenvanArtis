@@ -63,7 +63,7 @@ header{
 }
 
 /* ---------- feed ---------- */
-main{max-width:640px; margin:0 auto; padding:1.5rem 1rem 3rem}
+main{max-width:800px; margin:0 auto; padding:1.5rem 1rem 3rem}
 .kaart{
   background:var(--wit); border:1px solid var(--grijs-licht); border-radius:var(--radius);
   overflow:hidden; margin:1.5rem 0; box-shadow:var(--schaduw);
@@ -195,7 +195,7 @@ main{max-width:640px; margin:0 auto; padding:1.5rem 1rem 3rem}
 .aanmelden button:hover{background:var(--wit)}
 
 footer{
-  max-width:640px; margin:0 auto;
+  max-width:800px; margin:0 auto;
   padding:0 1rem 2.5rem; text-align:center;
   color:var(--grijs); font-size:.85rem;
 }
@@ -236,4 +236,70 @@ footer a{color:var(--grijs-donker)}
 .doelen-acties{
   display:flex; justify-content:center; gap:.7rem;
   flex-wrap:wrap; margin-top:1.8rem;
+}
+
+/* ---------- hero-band (samenvatting op index) ---------- */
+.hero-band{
+  background:var(--groen-licht);
+  border:1px solid var(--grijs-licht);
+  border-radius:var(--radius);
+  padding:2rem 1.6rem 1.8rem;
+  margin:1.5rem 0 .5rem;
+}
+.hero-band h2{
+  font-weight:700; font-size:1.55rem; line-height:1.2;
+  margin:0 0 .5rem; color:var(--groen-diep); letter-spacing:-.01em;
+}
+.hero-lead{
+  margin:0 0 1.5rem; color:var(--grijs-donker);
+  font-size:1rem; max-width:52ch;
+}
+.dreigt-grid{
+  display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+  gap:.8rem; margin-bottom:1.6rem;
+}
+.dreigt{
+  background:var(--wit); border:1px solid var(--grijs-licht);
+  border-radius:var(--radius-klein); padding:1.1rem 1.15rem;
+}
+.dreigt-icon{
+  display:inline-block; font-size:1.6rem; line-height:1;
+  margin-bottom:.5rem;
+}
+.dreigt h3{
+  font-weight:600; font-size:1rem; margin:.2rem 0 .35rem;
+  color:var(--tekst); letter-spacing:-.005em;
+}
+.dreigt p{margin:0; color:var(--grijs-donker); font-size:.88rem; line-height:1.5}
+
+.eisen-blok{
+  padding-top:1.4rem; border-top:1px solid var(--grijs-licht);
+}
+.eisen-kop{
+  font-weight:600; font-size:.85rem; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--groen-donker);
+  margin:0 0 .9rem;
+}
+.eisen{
+  list-style:none; padding:0; margin:0 0 1.3rem;
+  display:flex; flex-direction:column; gap:.55rem;
+}
+.eisen li{display:flex; align-items:flex-start; gap:.75rem}
+.eisen li span{
+  flex-shrink:0; width:1.75rem; height:1.75rem; border-radius:50%;
+  background:var(--groen); color:var(--groen-diep);
+  font-weight:700; font-size:.9rem;
+  display:flex; align-items:center; justify-content:center;
+}
+.eisen li p{margin:.1rem 0; color:var(--grijs-donker); font-size:.95rem}
+.eisen li strong{color:var(--tekst); font-weight:600}
+
+@media (max-width:520px){
+  .hero-band{padding:1.6rem 1.25rem 1.4rem}
+  .hero-band h2{font-size:1.35rem}
+}
+
+/* ---------- hero-band knoppenrij ---------- */
+.hero-acties{
+  display:flex; flex-wrap:wrap; gap:.6rem; align-items:center;
 }

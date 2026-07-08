@@ -25,7 +25,7 @@ Wekelijkse buurtberichten over het Masterplan van Artis — statische site voor 
 | Variabele | Doel |
 |---|---|
 | `TIKKIE_URL` | de echte Tikkie-link voor de "💚 Help mee!"-knop onder elk bericht |
-| `BUTTONDOWN_GEBRUIKER` | Buttondown-gebruikersnaam voor e-mailaanmeldingen (zolang leeg: aanmelden gaat via mail naar artis-omwonenden@proton.me) |
+| `BUTTONDOWN_GEBRUIKER` | Buttondown-gebruikersnaam voor e-mailaanmeldingen (zolang leeg: aanmelden gaat via mail naar iksteun@burenvanartis.nl) |
 | `SUPABASE_URL` + `SUPABASE_KEY` | gedeelde +1-tellers (zolang leeg: teller werkt per apparaat) |
 | `TOON_GEPLANDE` | `true` = alle berichten direct zichtbaar; `false` = berichten verschijnen automatisch pas op hun datum (wekelijkse planning!) |
 
@@ -83,3 +83,68 @@ Elk bericht volgt een vaste ritmiek: **haak** (concreet feit) → **jij-moment**
 (sensorisch, tweede persoon) → **context + haalbare alternatief** → **één CTA**.
 Vermijd stapels cijfers; kies één held-stat per bericht. Refereer consequent aan
 Masterplan 2034 en het bouwprogramma dat op de aanname van 2 miljoen bezoekers rust.
+
+## SEO en Google Search Console
+
+De site is voorbereid voor Google indexering met:
+
+- Beschrijvende `<title>` en `<meta description>` per pagina.
+- Canonieke URL (`<link rel="canonical">`) op beide pagina's.
+- Open Graph- en Twitter-tags voor mooie preview op WhatsApp, LinkedIn en X.
+- JSON-LD structured data: `Organization`, `WebSite`, `WebPage` en per bericht
+  automatisch een `BlogPosting`-schema (uit `posts.js`).
+- `robots.txt` en `sitemap.xml` in de hoofdmap.
+- Beschrijvende `alt`-teksten op afbeeldingen, gebaseerd op de posttitel.
+- Semantische HTML (`<article>`, `<time datetime>`, `<nav>`, `<main>`).
+
+### Twee dingen die je nog moet doen
+
+**1. Zet een Open Graph / social share-afbeelding op de site.**
+   Maak een afbeelding van 1200×630 px (bijvoorbeeld in Canva) met het logo,
+   de naam "Buren van Artis" en de tagline, en sla die op als:
+   `images/og-cover.jpg`. Dit is wat mensen zien als ze de site delen.
+
+**2. Voeg de site toe aan Google Search Console.**
+   Ga naar https://search.google.com/search-console en klik op "Property
+   toevoegen → URL-prefix". Vul in: `https://ashumathura.github.io/BurenvanArtis/`.
+
+   Google vraagt om verificatie. Twee opties:
+
+   *A. HTML-file-methode (aanbevolen)*
+   - Google geeft je een bestand met een naam als `google1234567890abcdef.html`.
+   - Upload dat bestand naar de hoofdmap van de repository, naast `index.html`.
+   - Commit en wacht 1 minuut tot GitHub Pages het publiceert.
+   - Klik op "Verifiëren" in Search Console.
+   - Verwijder daarna `google-verificatie-plaatshouder.html` als je wilt.
+
+   *B. HTML-tag-methode*
+   - Google geeft je een `<meta name="google-site-verification" ...>` tag.
+   - Open `index.html`, zoek de commentaarregel die zo begint:
+     `<!-- Google Search Console (vervang later door je eigen verificatiecode) -->`
+   - Haal de commentaar-tekens (`<!--` en `-->`) weg en vervang de content
+     door de code die Google je geeft.
+   - Doe hetzelfde in `doelen.html`.
+
+**3. Dien de sitemap in.**
+   In Search Console: Sitemaps → nieuwe sitemap toevoegen → `sitemap.xml` → Verzenden.
+
+**4. Bij nieuw bericht: opnieuw `sitemap.xml` bijwerken (optioneel maar netjes).**
+   Verander `<lastmod>` naar de datum van vandaag. Search Console pikt
+   nieuwe berichten meestal ook zonder deze update op via periodieke crawls.
+
+### Als je later een eigen domein neemt (bijvoorbeeld burenvanartis.nl)
+
+Zoek en vervang `https://ashumathura.github.io/BurenvanArtis/` door je nieuwe
+domein in deze bestanden: `index.html`, `doelen.html`, `sitemap.xml`, `robots.txt`.
+Voeg de nieuwe URL toe als aparte property in Search Console.
+
+### Waar je later verder in kunt investeren
+
+- **Individueel indexeerbare postpagina's**: nu zit alles op één `index.html`
+  met fragmenten (`#post-...`). Google indexeert die als één pagina. Voor
+  betere zichtbaarheid per bericht kan een static-site-generator (bv. Astro,
+  Eleventy) elk bericht een eigen HTML-pagina geven — vraag daar apart naar
+  wanneer de campagne meer volume krijgt.
+- **Google Analytics of Plausible**: nu bewust weggelaten voor privacy en
+  eenvoud. Als je later ziet wat werkt in je content wilt weten, kan Plausible
+  (privacy-vriendelijk) in twee regels erbij.
