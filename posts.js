@@ -15,7 +15,7 @@
 //              staan automatisch onder elk bericht.)
 // ============================================================
 
-const MANIFEST_URL = "https://linktr.ee/VOORBEELD";  // Manifest / Linktree
+const MANIFEST_URL = "#manifest";  // scrollt naar het formulier op de pagina  // Manifest / Linktree
 const CONTACT_EMAIL = "iksteun@burenvanartis.nl";
 
 const POSTS = [
@@ -372,7 +372,7 @@ Het argument dat "dynamic pricing" de piek zal spreiden, is in de hele attractie
 
 Wij vragen: leg in Masterplan 2034 een harde bovengrens vast die past bij 14 hectare in een woonwijk. Niet 2 miljoen. En niet ten koste van deze buurt.`,
     tags: ["Artis", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
-    afbeelding: "https://www.burenvanartis.nl/images/post1.png",
+    afbeelding: "https://picsum.photos/seed/druk1/1200/900",
     knoppen: []
   }
 ];
