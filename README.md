@@ -18,7 +18,7 @@ Wekelijkse buurtberichten over het Masterplan van Artis — statische site voor 
 1. Upload alle bestanden hierboven naar deze repository
    (github.com: **Add file → Upload files**).
 2. **Settings → Pages → Branch: main / (root) → Save.**
-3. Na ± 1 minuut live op `https://ashumathura.github.io/BurenvanArtis/`
+3. Na ± 1 minuut live op `https://www.burenvanartis.nl/`
 
 ## Instellingen (in instellingen.js)
 
@@ -106,7 +106,7 @@ De site is voorbereid voor Google indexering met:
 
 **2. Voeg de site toe aan Google Search Console.**
    Ga naar https://search.google.com/search-console en klik op "Property
-   toevoegen → URL-prefix". Vul in: `https://ashumathura.github.io/BurenvanArtis/`.
+   toevoegen → URL-prefix". Vul in: `https://www.burenvanartis.nl/`.
 
    Google vraagt om verificatie. Twee opties:
 
@@ -134,7 +134,7 @@ De site is voorbereid voor Google indexering met:
 
 ### Als je later een eigen domein neemt (bijvoorbeeld burenvanartis.nl)
 
-Zoek en vervang `https://ashumathura.github.io/BurenvanArtis/` door je nieuwe
+Zoek en vervang `https://www.burenvanartis.nl/` door je nieuwe
 domein in deze bestanden: `index.html`, `doelen.html`, `sitemap.xml`, `robots.txt`.
 Voeg de nieuwe URL toe als aparte property in Search Console.
 

@@ -4,4 +4,4 @@ Allow: /
 # Sla technische en tijdelijke bestanden over
 Disallow: /*.zip$
 
-Sitemap: https://ashumathura.github.io/BurenvanArtis/sitemap.xml
+Sitemap: https://www.burenvanartis.nl/sitemap.xml
