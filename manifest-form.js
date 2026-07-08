@@ -94,7 +94,11 @@
       } else {
         const body = await r.text();
         console.error("Supabase response:", r.status, body);
-        toonFout("Er ging iets mis. Probeer het later opnieuw.");
+        if (r.status === 401 || r.status === 403) {
+          toonFout("Het formulier heeft nog geen schrijfrechten in Supabase (RLS-policy ontbreekt). Zie README.");
+        } else {
+          toonFout("Er ging iets mis. Probeer het later opnieuw.");
+        }
       }
     } catch(err) {
       console.error(err);

@@ -66,6 +66,43 @@ grant execute on function plus_een(text) to anon;
 Daarna `SUPABASE_URL` en `SUPABASE_KEY` invullen in `instellingen.js`
 (Project Settings → API → Project URL en anon public key).
 
+## Supabase (manifest-handtekeningen)
+
+Extra tabel voor het manifestformulier. **Belangrijk:** Supabase zet Row Level
+Security (RLS) standaard aan zonder policies, wat betekent dat het formulier
+een foutmelding geeft ("Er ging iets mis") zodra iemand tekent — de anon-sleutel
+mag dan nog geen rijen toevoegen. De `create policy ... for insert` hieronder
+lost dat op:
+
+```sql
+create table manifest_handtekeningen (
+  id bigint generated always as identity primary key,
+  created_at timestamptz not null default now(),
+  voornaam text not null,
+  achternaam text not null,
+  straat text not null,
+  postcode text not null,
+  stad text not null,
+  email text not null unique
+);
+alter table manifest_handtekeningen enable row level security;
+create policy "iedereen mag tekenen" on manifest_handtekeningen
+  for insert with check (true);
+
+create or replace function manifest_teller()
+returns bigint language sql security definer as $$
+  select count(*) from manifest_handtekeningen;
+$$;
+grant execute on function manifest_teller() to anon;
+```
+
+Er is bewust geen `select`-policy op de tabel: de anon-sleutel mag alleen
+nieuwe handtekeningen toevoegen, niet de lijst met namen/adressen uitlezen.
+De teller op de website loopt via de losstaande `manifest_teller()`-functie.
+De `unique` op `email` zorgt dat een tweede poging met hetzelfde e-mailadres
+een 409-foutmelding geeft ("dit e-mailadres heeft al getekend") in plaats van
+een dubbele rij.
+
 
 ## Design v3 (juli 2026)
 
