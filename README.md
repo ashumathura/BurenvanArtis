@@ -103,6 +103,46 @@ De `unique` op `email` zorgt dat een tweede poging met hetzelfde e-mailadres
 een 409-foutmelding geeft ("dit e-mailadres heeft al getekend") in plaats van
 een dubbele rij.
 
+## Bevestigingsmail na ondertekenen (Resend)
+
+Na het tekenen van het manifest krijgt de ondertekenaar automatisch een
+bedankmail met de 4 eisen en een korte introductie van Buren van Artis. Dit
+loopt via een Supabase Edge Function (`supabase/functions/manifest-bevestiging`)
+die wordt aangeroepen door een Database Webhook zodra er een nieuwe rij in
+`manifest_handtekeningen` komt, en die de mail verstuurt via
+[Resend](https://resend.com).
+
+**Belangrijk:** de Resend API-sleutel is een geheim en mag nooit in de
+repository terechtkomen (dit is een publieke GitHub Pages-site). De sleutel
+wordt uitsluitend ingevuld als Edge Function-secret in het Supabase-dashboard.
+
+Eenmalige setup in het Supabase-dashboard:
+
+1. **Edge Function aanmaken.** Ga naar *Edge Functions → Deploy a new function*,
+   noem hem `manifest-bevestiging`, en plak de inhoud van
+   `supabase/functions/manifest-bevestiging/index.ts`.
+2. **Secret instellen.** Ga naar *Edge Functions → Secrets* en voeg toe:
+   - `RESEND_API_KEY` = de Resend-sleutel met naam "Manifest bevestiging"
+     (níet de "Supabase Integration"-sleutel — die is voor iets anders).
+   - `SUPABASE_URL` en `SUPABASE_ANON_KEY` hoef je niet zelf in te vullen;
+     die geeft Supabase automatisch aan elke Edge Function mee.
+3. **Database Webhook aanmaken.** Ga naar *Database → Webhooks → Create a new
+   webhook*:
+   - Table: `manifest_handtekeningen`
+   - Events: `Insert`
+   - Type: `Supabase Edge Functions`
+   - Edge Function: `manifest-bevestiging`
+
+   (Bij dit webhook-type regelt Supabase de authenticatie tussen de database
+   en de functie automatisch — je hoeft zelf geen headers in te stellen.)
+4. **Testen.** Teken het manifest met een echt e-mailadres van jezelf en
+   controleer of de mail binnenkomt. Bij problemen: *Edge Functions →
+   manifest-bevestiging → Logs* laat de foutmelding zien (bijvoorbeeld een
+   foutieve Resend-sleutel of een nog niet geverifieerd domein).
+
+Het "van"-adres in de functie is `manifest@burenvanartis.nl` — dit werkt
+zodra het domein `burenvanartis.nl` geverifieerd is in Resend (SPF/DKIM),
+ongeacht welk lokaal deel je gebruikt.
 
 ## Design v3 (juli 2026)
 
