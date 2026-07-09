@@ -41,6 +41,11 @@ async function haalTeller(): Promise<number | null> {
 }
 
 Deno.serve(async (req) => {
+  if (!RESEND_API_KEY) {
+    console.error("RESEND_API_KEY secret ontbreekt of is leeg — controleer Edge Functions → Secrets");
+    return new Response("Server misconfigured: RESEND_API_KEY ontbreekt", { status: 500 });
+  }
+
   const payload = await req.json();
   const record = payload.record;
 
