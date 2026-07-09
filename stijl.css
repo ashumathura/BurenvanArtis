@@ -375,13 +375,24 @@ footer a{color:var(--grijs-donker)}
   font-size:.9rem; font-weight:500;
 }
 .manifest-ok{
-  display:none; text-align:center; padding:1.5rem 1rem;
+  display:none; text-align:center; padding:2rem 1.5rem;
+  background:#F4F7F2; color:var(--groen-diep);
+  border-radius:16px; border:2px solid var(--groen);
+  box-shadow:0 8px 28px rgba(0,0,0,.22);
+  animation:manifest-ok-pop .35s ease-out;
 }
+.manifest-ok:focus{outline:none}
+.manifest-ok-icon{font-size:2.75rem; line-height:1; margin-bottom:.6rem}
 .manifest-ok h3{
-  font-weight:700; font-size:1.3rem; color:var(--groen);
+  font-weight:700; font-size:1.5rem; color:var(--groen-diep);
   margin:0 0 .5rem;
 }
-.manifest-ok p{color:#E4EFE7; margin:.3rem 0}
+.manifest-ok p{color:#375247; margin:.3rem 0}
+
+@keyframes manifest-ok-pop{
+  from{opacity:0; transform:scale(.94) translateY(8px)}
+  to{opacity:1; transform:scale(1) translateY(0)}
+}
 
 @media (max-width:520px){
   .manifest-grid{grid-template-columns:1fr}

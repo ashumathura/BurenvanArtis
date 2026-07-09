@@ -176,19 +176,22 @@
       <li><span>3</span><p><strong>Prioriteit voor dierenwelzijn en groen</strong>, niet voor commercie.</p></li>
       <li><span>4</span><p><strong>Geen dure horeca</strong> en hogere toegangsprijzen.</p></li>
     </ul>
-    <h3 style="color:#fff;font-weight:600;font-size:1rem;margin:0 0 1rem">Ik eis een leefbare buurt:</h3>
-    <form id="manifest-form" class="manifest-grid" novalidate>
-      <label>Voornaam <input type="text" name="voornaam" autocomplete="given-name" placeholder="Jan" required></label>
-      <label>Achternaam <input type="text" name="achternaam" autocomplete="family-name" placeholder="Jansen" required></label>
-      <label>Straatnaam en nummer <input type="text" name="straat" autocomplete="street-address" placeholder="Plantage Kerklaan 1" required></label>
-      <label>Postcode <input type="text" name="postcode" autocomplete="postal-code" placeholder="1018 AB" required></label>
-      <label>Stad <input type="text" name="stad" autocomplete="address-level2" placeholder="Amsterdam" required></label>
-      <label class="breed">E-mailadres <input type="email" name="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
-      <div id="manifest-fout" class="manifest-fout"></div>
-      <button type="submit" class="manifest-submit">Teken het manifest ✍️</button>
-    </form>
-    <div id="manifest-ok" class="manifest-ok">
-      <h3>Bedankt! ✊</h3>
+    <div id="manifest-formulier">
+      <h3 style="color:#fff;font-weight:600;font-size:1rem;margin:0 0 1rem">Ik eis een leefbare buurt:</h3>
+      <form id="manifest-form" class="manifest-grid" novalidate>
+        <label>Voornaam <input type="text" name="voornaam" autocomplete="given-name" placeholder="Jan" required></label>
+        <label>Achternaam <input type="text" name="achternaam" autocomplete="family-name" placeholder="Jansen" required></label>
+        <label>Straatnaam en nummer <input type="text" name="straat" autocomplete="street-address" placeholder="Plantage Kerklaan 1" required></label>
+        <label>Postcode <input type="text" name="postcode" autocomplete="postal-code" placeholder="1018 AB" required></label>
+        <label>Stad <input type="text" name="stad" autocomplete="address-level2" placeholder="Amsterdam" required></label>
+        <label class="breed">E-mailadres <input type="email" name="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
+        <div id="manifest-fout" class="manifest-fout"></div>
+        <button type="submit" class="manifest-submit">Teken het manifest ✍️</button>
+      </form>
+    </div>
+    <div id="manifest-ok" class="manifest-ok" role="status" tabindex="-1">
+      <div class="manifest-ok-icon" aria-hidden="true">✅</div>
+      <h3>Bedankt voor je steun! ✊</h3>
       <p>Je handtekening is geregistreerd. Samen maken we het verschil.</p>
       <p>Deel dit manifest met je buren — hoe meer handtekeningen, hoe sterker ons mandaat.</p>
     </div>

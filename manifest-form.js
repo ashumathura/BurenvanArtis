@@ -86,8 +86,10 @@
       });
 
       if (r.status === 201 || r.status === 200) {
-        form.style.display = "none";
+        document.getElementById("manifest-formulier").style.display = "none";
         ok.style.display = "block";
+        ok.scrollIntoView({ behavior: "smooth", block: "center" });
+        ok.focus();
         laadTeller();
         if (typeof gtag === "function") gtag("event", "manifest_signed");
       } else if (r.status === 409) {
