@@ -119,7 +119,7 @@ een dubbele rij.
 Elk bericht volgt een vaste ritmiek: **haak** (concreet feit) → **jij-moment**
 (sensorisch, tweede persoon) → **context + haalbare alternatief** → **één CTA**.
 Vermijd stapels cijfers; kies één held-stat per bericht. Refereer consequent aan
-Masterplan 2034 en het bouwprogramma dat op de aanname van 2 miljoen bezoekers rust.
+Masterplan 2030 en het bouwprogramma dat op de aanname van 2 miljoen bezoekers rust.
 
 ## SEO en Google Search Console
 
