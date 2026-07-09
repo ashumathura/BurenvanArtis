@@ -354,7 +354,7 @@ In Masterplan 2030 wordt de aanname van 2 miljoen bezoekers gebruikt om hoogbouw
 
 Ken jij iemand die om de hoek van Artis woont, of vroeger woonde? Stuur ze dit bericht door. Iedereen moet weten wat er aankomt. Zwijgen kost ons de buurt.`,
     tags: ["Artis", "MasterplanArtis", "Stadsontwikkeling", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/vergelijk2/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post2.png",
     knoppen: []
   },
 
