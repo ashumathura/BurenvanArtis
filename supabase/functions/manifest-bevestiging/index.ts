@@ -63,10 +63,10 @@ Deno.serve(async (req) => {
   <p>Bedankt dat je het <strong>Manifest Behoud Plantagebuurt</strong> hebt ondertekend. ${tellerZin} die samen opkomen voor een leefbare Plantagebuurt.</p>
   <p><strong>Met jouw handtekening eisen we:</strong></p>
   <ol style="padding-left:1.2rem">
-    <li>Stop de groei naar 2 miljoen bezoekers.</li>
-    <li>Max 8 meter hoog op de erfgrenzen van het park.</li>
-    <li>Prioriteit voor dierenwelzijn en groen, niet voor commercie.</li>
-    <li>Geen dure horeca en hogere toegangsprijzen.</li>
+    <li>Een leefbare buurt!</li>
+    <li>Nieuwe gebouwen aan de randen van het park niet hoger dan 8 meter.</li>
+    <li>Prioriteit voor bestaand en nieuw groen.</li>
+    <li>Geen hogere toegangsprijzen en nog meer horeca.</li>
   </ol>
   <p><strong>Waar we voor staan:</strong> Buren van Artis is een bewonerscollectief dat pleit voor een leefbare Plantagebuurt, bouwplannen op menselijke schaal en échte participatie bij Masterplan 2030 — constructief, feitelijk en samen sterk.</p>
   <p>Hoe meer handtekeningen, hoe sterker ons mandaat richting de gemeente en Artis. Help mee door dit manifest te delen met je buren:</p>

@@ -285,10 +285,6 @@ footer a{color:var(--grijs-donker)}
   text-transform:uppercase; color:var(--groen-donker);
   margin:0 0 .9rem;
 }
-.eisen-titel{
-  font-weight:700; font-size:1.15rem; color:var(--groen-diep);
-  margin:-.4rem 0 .8rem; letter-spacing:-.01em;
-}
 .eisen{
   list-style:none; padding:0; margin:0 0 1.3rem;
   display:flex; flex-direction:column; gap:.55rem;
