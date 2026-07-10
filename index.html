@@ -85,8 +85,8 @@
   <h1 class="merk">Buren <span class="van">van</span> Artis</h1>
   <p class="onderkop">🌳 Samen beschermen we ons unieke stukje Amsterdam! Wij pleiten voor een leefbare Plantagebuurt, bouwplannen op menselijke schaal en échte participatie. Constructief, feitelijk en samen sterk.</p>
   <nav class="nav">
-    <a href="index.html" class="actief">Berichten</a>
-    <a href="doelen.html">Onze doelen</a>
+    <a href="/" class="actief">Berichten</a>
+    <a href="/doelen.html">Onze doelen</a>
   </nav>
 </header>
 
@@ -386,6 +386,53 @@ if (BUTTONDOWN_GEBRUIKER) {
 formulier.addEventListener("submit", () => {
   if (typeof gtag === "function") gtag("event", "klik_aanmelden");
 });
+
+// ---------- leesgedrag per bericht (scroll tracking) ----------
+if (typeof gtag === "function" && "IntersectionObserver" in window) {
+  const leesSessies = new Map(); // post_id -> tijdstip waarop bericht zichtbaar werd
+  const gezienPosts = new Set(); // post_id die al een "post_zichtbaar" event kregen
+
+  function meldLeestijd(id, titel) {
+    const start = leesSessies.get(id);
+    if (start == null) return;
+    leesSessies.delete(id);
+    const seconden = Math.round((performance.now() - start) / 1000);
+    if (seconden < 1) return; // te kort om als "gelezen" te tellen
+    gtag("event", "post_leestijd", { post_id: id, post_titel: titel, seconden });
+  }
+
+  const postObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const id = entry.target.dataset.postId;
+      const titel = entry.target.dataset.postTitel;
+      if (entry.isIntersecting) {
+        leesSessies.set(id, performance.now());
+        if (!gezienPosts.has(id)) {
+          gezienPosts.add(id);
+          gtag("event", "post_zichtbaar", { post_id: id, post_titel: titel });
+        }
+      } else {
+        meldLeestijd(id, titel);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  zichtbaar.forEach(post => {
+    const el = document.getElementById("post-" + post.id);
+    if (!el) return;
+    el.dataset.postId = post.id;
+    el.dataset.postTitel = post.titel;
+    postObserver.observe(el);
+  });
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.visibilityState !== "hidden") return;
+    Array.from(leesSessies.keys()).forEach(id => {
+      const el = document.getElementById("post-" + id);
+      meldLeestijd(id, el ? el.dataset.postTitel : "");
+    });
+  });
+}
 </script>
 <script src="manifest-form.js"></script>
 </body>
