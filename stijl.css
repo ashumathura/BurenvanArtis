@@ -206,6 +206,11 @@ footer a{color:var(--grijs-donker)}
   max-width:56ch; margin:1.8rem auto .5rem;
   text-align:center; color:var(--grijs-donker); font-size:1.02rem;
 }
+.doelen-kop{
+  text-align:center; font-weight:700; font-size:1.4rem;
+  color:var(--groen-diep); letter-spacing:-.01em;
+  margin:2.2rem 0 .8rem;
+}
 .doel{
   background:var(--wit); border:1px solid var(--grijs-licht);
   border-radius:var(--radius); padding:1.4rem 1.5rem;
@@ -279,6 +284,10 @@ footer a{color:var(--grijs-donker)}
   font-weight:600; font-size:.85rem; letter-spacing:.08em;
   text-transform:uppercase; color:var(--groen-donker);
   margin:0 0 .9rem;
+}
+.eisen-titel{
+  font-weight:700; font-size:1.15rem; color:var(--groen-diep);
+  margin:-.4rem 0 .8rem; letter-spacing:-.01em;
 }
 .eisen{
   list-style:none; padding:0; margin:0 0 1.3rem;
