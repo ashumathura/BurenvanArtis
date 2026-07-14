@@ -32,8 +32,7 @@ Als 100 buren van Artis nú tekenen, kunnen we gezamenlijk Artis terugdwingen na
 
 WAT KUNT Ú DOEN?
 ✍️ Onderteken het Manifest van Buren van Artis via de knop hieronder
-📬 Meld u aan voor de mailinglijst onderaan de pagina
-💚 Steun de activiteiten van Buren van Artis financieel via de knop HELP MEE hieronder!`,
+📬 Meld u aan voor de mailinglijst onderaan de pagina`,
     tags: ["BurenVanArtis", "Participatie", "Plantagebuurt", "Amsterdam"],
     afbeelding: "https://picsum.photos/seed/samen18/1200/900",
     knoppen: [{ label: "JA, IK TEKEN HET MANIFEST!", url: MANIFEST_URL }]
