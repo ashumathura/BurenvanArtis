@@ -229,7 +229,7 @@ zichtbaar.forEach(post => {
     media = `<div class="kaart-media"><img src="${post.afbeelding}" alt="Buren van Artis — ${escapeHtml(post.titel)}" loading="lazy"></div>`;
   }
 
-  const alineas = (post.tekst || "").split("\n\n").map(a => `<p>${escapeHtml(a)}</p>`).join("");
+  const alineas = (post.tekst || "").split("\n\n").map(a => `<p>${escapeHtml(a).replace(/\n/g, "<br>")}</p>`).join("");
 
   const knoppen = (post.knoppen || []).map(k =>
     `<a class="knop" href="${k.url}" target="_blank" rel="noopener">${escapeHtml(k.label)}</a>`

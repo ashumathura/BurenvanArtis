@@ -145,6 +145,9 @@ main{max-width:800px; margin:0 auto; padding:1.5rem 1rem 3rem}
   transition:background .15s, color .15s, border-color .15s;
 }
 .helpmee:hover{background:var(--groen-donker); border-color:var(--groen-donker); color:var(--wit)}
+/* Help mee!/Tikkie-knop tijdelijk verborgen (hele site). Weer tonen?
+   Verwijder de regel hieronder. */
+.helpmee{display:none}
 
 .delen{display:inline-flex; gap:.35rem; margin-left:auto}
 .deel{

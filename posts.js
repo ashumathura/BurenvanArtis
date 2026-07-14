@@ -24,41 +24,37 @@ const POSTS = [
   {
     id: "2026-11-03",
     datum: "2026-11-03",
-    titel: "Wat één huishouden niet kan, kunnen 240 huishoudens wél. Maar dan moet je nu meedoen.",
+    titel: "Wat één huishouden niet kan, kunnen 240 huishoudens wel. Help ook mee en houd Artis in toom!",
     tekst:
-`Als jij vandaag niets doet, ligt de eerste vergunning voor Masterplan 2030 er over enkele maanden. Dan wordt de eerste steen gemetseld voor 14 meter aan onze kade. En als die er staat, staat hij er honderd jaar. Onze kinderen zullen ons vragen waarom we het lieten gebeuren.
+`Als u vandaag niets doet, ligt de eerste vergunning voor onderdelen van Masterplan 2030 er binnenkort.
 
-Nu kan het nog. Als 100 buren nu tekenen, ligt er een juridisch obstakel dat Artis terug naar de tafel dwingt. Als 240 huishoudens €15 doneren, kunnen we een onafhankelijke verkeers-contra-expertise financieren die de gemeente niet kan negeren.
+Als 100 buren van Artis nú tekenen, kunnen we gezamenlijk Artis terugdwingen naar de tekentafel. Als 240 huishoudens elk 15 euro bijdragen, kunnen we een onafhankelijke verkeers-contra-expertise laten uitvoeren die de gemeente niet kan negeren.
 
-Dit is wat we hebben: het juridische playbook ligt klaar. Manifest, bezwaarschriften, contra-expertises. We geven niet op.
-
-Dit is wat we nodig hebben: jou. Drie stappen. Kies wat past.
-
-1. Onderteken het Manifest via de knop hieronder.
-2. Meld je aan voor de mailinglijst onderaan de pagina.
-3. Doneer via de "Help mee!"-knop hieronder.
-
-Samen krijgen we Masterplan 2030 terug op de tekentafel voor een plan dat past bij een woonwijk, niet bij een pretpark. Alleen: dan moet je nu meedoen. Straks is het niet meer terug te draaien.`,
+WAT KUNT Ú DOEN?
+✍️ Onderteken het Manifest van Buren van Artis via de knop hieronder
+📬 Meld u aan voor de mailinglijst onderaan de pagina
+💚 Steun de activiteiten van Buren van Artis financieel via de knop HELP MEE hieronder!`,
     tags: ["BurenVanArtis", "Participatie", "Plantagebuurt", "Amsterdam"],
     afbeelding: "https://picsum.photos/seed/samen18/1200/900",
-    knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
+    knoppen: [{ label: "JA, IK TEKEN HET MANIFEST!", url: MANIFEST_URL }]
   },
 
   // ---------- POST 17 — Gemeente ----------
   {
     id: "2026-10-27",
     datum: "2026-10-27",
-    titel: "Amsterdam wil onder 20 miljoen toeristen. Zit al op 26 miljoen. En de Plantagebuurt moet er nog meer bij nemen?",
+    titel: "Amsterdam wil minder toeristen. Van 26 miljoen per jaar naar maximaal 20 miljoen per jaar. Maar de Plantagebuurt moet juist méér toeristen ontvangen?",
     tekst:
-`Je woont hier omdat de Plantagebuurt geen Museumplein is. Masterplan 2030 verandert dat in tien jaar tijd — met gemeentelijke akkoorden erbij.
+`U woont hier misschien omdat de Plantagebuurt géén Museumplein is. Het Masterplan van Artis verandert dat in tien jaar. Met steun van de gemeente…
 
-Amsterdam heeft een eigen bovengrens: 20 miljoen toeristen per jaar. Vorig jaar zat de stad op 26 miljoen. Ondertussen wordt het masterplan van Artis stap voor stap doorgezet: bestemmingsplannen aangepast, "tijdelijke" vergunningen van 10 jaar verleend, hoogtenormen opgerekt. De randen van het park worden volgebouwd met hoogbouw. Er komt een grotere parkeergarage. De horeca wordt uitgebreid, elke keer een tikje duurder. De business case leunt op één ding: nog méér bezoekers door onze wijk trekken.
+Bestemmingsplannen worden aangepast, 'tijdelijke' vergunningen voor tien jaar verleend en hoogtenormen opgerekt. De randen van Artis worden volgebouwd met hoogbouw.
 
-Wat dat oplevert voor jou: extreme drukte, hulpdiensten die niet meer doorkomen, meer uitstoot, en een dierentuin die steeds onbereikbaarder wordt voor gewone Amsterdammers. €30 voor een volwassene, €27,50 voor een kind — reken maar uit wat een gezin betaalt.
+De buurt zal de gevolgen voelen: extreme drukte en lawaai, meer verkeer en meer schadelijke uitstoot.
 
-Artis krijgt bijna 19 miljoen euro subsidie van díe gemeente. Voor natuureducatie en maatschappelijk belang. Niet voor commerciële expansie in een woonwijk.
+Artis ontving bijna 19 miljoen subsidie van de gemeente. Vanwege onder meer natuureducatie en maatschappelijk belang.
+Níet voor commerciële expansie in een woonwijk!
 
-Wij eisen dat de gemeente haar rol als toezichthouder serieus neemt. Deel dit bericht met je stadsdeelbestuurder of gemeenteraadslid. Zeg wat ze niet willen horen.`,
+Deel dit bericht met uw stadsdeelbestuurder of gemeenteraadslid. Laat ze horen wat ze liever níet horen!`,
     tags: ["Amsterdam", "Stadsontwikkeling", "LeefbareStad", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/stopera17/1200/900",
     knoppen: []
@@ -68,17 +64,18 @@ Wij eisen dat de gemeente haar rol als toezichthouder serieus neemt. Deel dit be
   {
     id: "2026-10-20",
     datum: "2026-10-20",
-    titel: "Op de laatste bewonersavond zag de helft geen verbetering. Of vond het slechter. Toch gaat het door.",
+    titel: "Buurtbewoners zien geen verbetering van de plannen. Tóch gaan ze door!",
     tekst:
-`Herinner je die keer dat een leidinggevende naar je mening vroeg en er niets mee deed. Nu op wijkschaal. Nu permanent.
+`Artis heeft een extern bureau ingeschakeld om het participatieproces rond Masterplan 2030 te begeleiden. 'Artis heeft zijn best gedaan,' meent dit bureau.
 
-Artis heeft een extern bureau ingehuurd om het "participatieproces" rond Masterplan 2030 te leiden. Conclusie van dat bureau: "Artis heeft haar best gedaan." De aanwezigen op de laatste sessie hadden een andere ervaring — de helft zag geen verbetering, of vond het zelfs slechter geworden.
+De buurtbewoners op de laatste Artis-bijeenkomst voor de buurt hadden een andere ervaring. Zij vonden de plannen zelfs verslechterd.
 
-Dat is de definitie van schijnparticipatie: mensen laten meepraten over de kleur van de bakstenen, terwijl je de hoogte, de massa en de commerciële invulling al hebt vastgelegd. Ondertussen wordt het masterplan gewoon doorgezet. De hoogbouw op de randen komt eraan. De parkeergarage komt eraan. De duurdere horeca komt eraan. En als jouw kind straks vraagt waarom onze zonnige kade in de schaduw ligt, is het antwoord: "Omdat wij het lieten gebeuren."
+Artis presenteerde een typisch staaltje schijnparticipatie: de buurt mag meepraten over de kleur van de bakstenen en de begroeiing, maar níet over de hoogte van gebouwen.
 
-Dit gebeurt zolang wij het toelaten. Zwijgen is een vorm van instemming — en Artis rekent daarop.
+Ondertussen worden de hoofdlijnen van het Masterplan doorgezet. De hoogbouw aan de randen van het park komt eraan…
+Laat dat niet gebeuren!
 
-Was jij bij de bewonersavonden en werd je gehoord? Of niet? Mail je ervaring naar ${CONTACT_EMAIL}. We bundelen de verhalen tot een dossier dat de gemeente niet kan negeren.`,
+Mail uw ervaringen met de participatie en uw mening over de plannen naar ${CONTACT_EMAIL}`,
     tags: ["Participatie", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/grafiek16/1200/900",
     knoppen: []
@@ -88,17 +85,17 @@ Was jij bij de bewonersavonden en werd je gehoord? Of niet? Mail je ervaring naa
   {
     id: "2026-10-13",
     datum: "2026-10-13",
-    titel: "Van het gas af? 100% steun. Maar waarom moet er ook een personeelsdouche in dat gebouw?",
+    titel: "Van het gas af? Prima idee! Maar waarom moeten alle personeelsvoorzieningen in zo'n kolossaal gebouw?",
     tekst:
-`Als jij thuis je cv-ketel vervangt door een warmtepomp, bouw je er dan een badkamer omheen? Waarom mag Artis dat wel — op jouw kade?
+`De geplande WKO-installatie zorgt ervoor dat Artis in 2030 van het gas af kan. Extra personeelsvoorzieningen zijn blijkbaar nodig.
+Maar waarom in zo'n mega-gebouw?
 
-De WKO-installatie in Masterplan 2030 zorgt dat Artis in 2030 van het gas af kan. Die verduurzaming steunen we volledig. Maar in datzelfde gebouw komen óók een personeelskantine, kleedruimtes en douches. Dát is de reden dat het gebouw 14 meter hoog moet worden — 4,5 verdiepingen, over jouw kade, over jouw ontbijttafel, over jouw zomeravond.
+Deze nieuwe kolos werpt straks schaduw over úw kade, úw ontbijttafel en úw zomeravond.
+Een precedent, vrezen wij. Als het in één hoek van Artis mag, mag het straks dan overal?
 
-Duurzaamheid wordt hier misbruikt als excuus voor een overmaat aan bouwvolume dat helemaal niets met duurzaamheid te maken heeft. En het schept precedent: als 14 meter hier mag, mag het overal op de randen van het park. Nog een gebouw. Nog een muur. Nog een stukje van onze wijk minder.
+De buurt heeft alternatieven aangedragen, waar Artis niet voor openstaat. Artis beschouwt 'het gesprek' over het WKO/Dienstengebouw als afgesloten. Wíj niet!
 
-We hebben concrete alternatieven aangedragen: die niet-technische functies elders in het park onderbrengen. Gebouw kan lager. Zonder verlies aan duurzaamheid. Artis beschouwt het gesprek als gesloten. Wij niet.
-
-Onderteken het Manifest. Steun de WKO, verwerp de sluipende hoogbouw op onze kade.`,
+Onderteken het Manifest! Steun de WKO, maar kom in actie tegen nodeloze hoogbouw!`,
     tags: ["MasterplanArtis", "Entrepotdok", "LeefbareStad", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/weegschaal15/1200/900",
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
@@ -108,17 +105,14 @@ Onderteken het Manifest. Steun de WKO, verwerp de sluipende hoogbouw op onze kad
   {
     id: "2026-10-06",
     datum: "2026-10-06",
-    titel: "\"Natuurinclusief.\" \"Groene daktuinen.\" 14 meter hoog. 74 meter lang. Wij trappen er niet in.",
+    titel: "'Natuurinclusief, groene daktuinen…' Greenwashing op hoog niveau!",
     tekst:
-`Loop straks langs een muur van 4,5 verdieping hoog. Bekijk het klimplantje op de gevel. Vraag jezelf af of dit is wat er wordt bedoeld met "natuurinclusieve stad" — of dat je voor de gek wordt gehouden.
+`Loop eens langs een muur van 14 meter hoog en 74 meter breed. Bedenk er wat klimplanten bij. Is dát een 'natuurinclusieve' wijk?
+En als die Muur van Artis er staat, gaat hij niet zo snel weer weg…
 
-Het ontwerp van het Dienstengebouw uit Masterplan 2030 strooit met marketingtermen: natuurinclusief, Braziliaans metselwerk, groene daktuinen, inheemse beplanting. Onder al die woorden zit nog steeds een blok van 14 meter hoog en 74 meter lang, dat de zon van de kade neemt. Aan de rand van het park. Waar honderden Amsterdammers vandaag komen om te ontsnappen aan een steeds dichter volgebouwde stad.
+Buren van Artis roept de gemeente op: toets de Artis-plannen nu écht op massa, hoogte en impact!
 
-Dit is groenwasserij op hoog niveau: klimaat en natuur inzetten als retoriek, terwijl je een muur bouwt die precies het tegenovergestelde uitdrukt. En als hij er staat, gaat hij niet meer weg. Deze generatie besluit voor de volgende drie generaties.
-
-Onze vraag aan de gemeente: toets de plannen op massa, hoogte en impact — op wat er straks écht staat. Niet op de adjectieven in de brochure.
-
-Deel dit bericht als je genoeg hebt van groenwas-marketing die onze buurt kost.`,
+Deel dit bericht als u genoeg heeft van greenwashing ten koste van de Plantagebuurt!`,
     tags: ["Entrepotdok", "MasterplanArtis", "Stadsontwikkeling", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/muur14/1200/900",
     knoppen: []
@@ -128,35 +122,35 @@ Deel dit bericht als je genoeg hebt van groenwas-marketing die onze buurt kost.`
   {
     id: "2026-09-29",
     datum: "2026-09-29",
-    titel: "Onze eis is één cijfer: 8 meter. Niet hoger. Voor iedereen die hier over 20 jaar nog wil wonen.",
+    titel: "Wij vragen om de menselijke maat! Maximaal 8 meter en níet hoger!",
     tekst:
-`Sta op je stoep en kijk omhoog. 8 meter is 2,5 verdieping — de hoogte van de historische panden op het Entrepotdok. 14 meter is 4,5 verdieping. Het verschil is: zon of geen zon. Ademen of ademnood. Historische wijk of stedelijk ravijn.
+`Voor ons, onze kinderen, en iedereen die de komende 20 jaar in onze historische wijk rond Artis woont.
 
-Wij zijn niet tegen Artis en niet tegen verduurzaming. Wij eisen wél dat nieuwbouw op de erfgrenzen van het park de menselijke schaal respecteert. Één harde regel voor Masterplan 2030: maximaal 8 meter op de randen van het park. Geen ingewikkelde onderhandelingen per gebouw. Eén cijfer.
+Géén ingewikkelde trajecten per gebouw, maar één vuistregel: maximaal 8 meter de hoogte in!
 
-Bij 8 meter blijft de kade zonovergoten en past de nieuwbouw bij de historische omgeving. De WKO-installatie past er ook onder — als de niet-technische functies (kantines, douches, kantoor) elders in het park worden ondergebracht. Dat is haalbaar; we hebben het uitgewerkt.
+Als Artis deze grenzen niet respecteert, komen er de volgende jaren ongetwijfeld nog meer kolossale gebouwen bij. Ten koste van de buurt.
 
-Als we deze grens niet nu vastleggen, komen er de volgende tien jaar nóg meer gebouwen van 14 meter langs de randen van het park. Precedentwerking heet dat — en die begint hier, met de eerste vergunning die er nu aankomt.
-
-Onderteken het Manifest Behoud Plantagebuurt. Eén cijfer, één harde regel, één eerlijke afspraak.`,
+TEKEN HET MANIFEST NÚ!`,
     tags: ["Plantagebuurt", "LeefbareStad", "MasterplanArtis", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/schaal13/1200/900",
-    knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
+    knoppen: [{ label: "Teken het Manifest nú!", url: MANIFEST_URL }]
   },
 
   // ---------- POST 12 — Verkeersinfarct ----------
   {
     id: "2026-09-22",
     datum: "2026-09-22",
-    titel: "Een grotere parkeergarage voor bezoekersgroei = auto's die 24/7 onze wijk doorkruisen.",
+    titel: "Een grote parkeergarage en héél veel auto's…",
     tekst:
-`Het is een dinsdagochtend. Je fietst je zoon naar school over de Plantage Kerklaan. Voor je: een SUV met buitenlands kenteken schuin geparkeerd. Naast je: een leverancier die achteruit een steegje in probeert. Achter je: nog een auto die je bel niet hoort. Je zoon houdt zich stevig vast.
+`Dinsdagochtend. Je fietst met je zoontje achterop door de Plantage Kerklaan. Voor je: een SUV met buitenlands kenteken. Naast je: een reusachtige vrachtauto van een van de vele leveranciers die achteruit een steeg in wil. Achter je: een auto die jouw fietsbel niet hoort.
+Je zoontje klemt zich stevig aan je vast.
 
-Dit is de wijk die Masterplan 2030 ons oplevert. De grotere parkeergarage aan de rand van het park is bewezen aanzuigend voor autoverkeer — bezoekers die anders het OV zouden kiezen, kiezen bij een garage voor de auto. Bij dat verkeer komt nog het zware leveranciersverkeer voor de nieuwe horeca- en kantoorfuncties.
+Dít is wat de Artis-expansie ons oplevert. Een grote parkeergarage aan de rand van het park heeft een aanzuigende werking, dat is elders al gebleken. Géén stimulans om met het OV naar Artis, kantoren of restaurants te komen.
 
-De gevolgen zijn concreet en dagelijks: onveilige stoepen voor onze kinderen, meer fijnstof en NOx in de longen van bewoners, ambulances en brandweer die vastlopen in de drukte. En dat elk uur van elke dag dat het masterplan bezig is uit te rollen. Uitstoot ken je pas als je hem inademt.
+Gevolgen voor de buurt: meer schadelijke uitstoot, onveilige stoepen en straten, hulpdiensten die vastlopen.
 
-Onze vraag: onafhankelijke contra-expertise op de verkeers- en parkeernormen, vóór de vergunningen onherroepelijk worden. Meld je aan onderaan de pagina zodat we jou kunnen bereiken op het moment dat het telt.`,
+De Buren van Artis pleiten voor onafhankelijke contra-expertise: uitgebreid onderzoek naar de extra verkeersstromen als gevolg van Artis' plannen.
+Wilt u dat ook? Meld u aan onderaan de pagina!`,
     tags: ["Plantagebuurt", "Amsterdam", "LeefbareStad", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/verkeer12/1200/900",
     knoppen: []
@@ -166,17 +160,19 @@ Onze vraag: onafhankelijke contra-expertise op de verkeers- en parkeernormen, v�
   {
     id: "2026-09-15",
     datum: "2026-09-15",
-    titel: "\"Tijdelijk\" horecapaviljoen op het Salmplein. Vergunning aangevraagd voor 10 jaar. Zo tijdelijk als je basisschool.",
+    titel: "'Tijdelijk' horecapaviljoen op het Salmplein. Vergunning aangevraagd voor 10 jaar.",
     tekst:
-`Onthoud dit woord: tijdelijk. Een kind dat in 2026 leert lezen, doet in 2036 eindexamen. Zo tijdelijk. En binnen die tien jaar wordt "tijdelijk" gewoon "vast" — dat is het patroon in Amsterdam.
+`Let op het woord 'tijdelijk'! Een kind dat in 2026 leert lezen, doet gemiddeld rond 2036 eindexamen. Dát is dus 'tijdelijk'.
+En, zoals heel vaak in onze stad: 'tijdelijk' wordt meestal 'vast'.
 
-Naast de bouwstenen uit Masterplan 2030 vraagt Artis nu ook een "tijdelijke" vergunning aan voor een nieuw, groot horecapaviljoen op het Salmplein. Bij de entree. Voor tien jaar. Dit stond niet in de afspraken die eerder met de buurt zijn gemaakt.
+Artis wil een tijdelijke vergunning voor een nieuw, groot horecapaviljoen op het Salmplein. Verrassing voor de buurt…
 
-Zie het patroon: het masterplan legt de grote infrastructuur vast — hoogbouw op de randen van het park, een grotere parkeergarage — en de commerciële invulling wordt daarnaast stapsgewijs via losse vergunningen toegevoegd. Steeds duurdere horeca. Steeds meer bezoekers. Steeds minder groen. Aan het eind is er van de oorspronkelijke afspraken weinig over — en van onze buurt ook.
+Het Masterplan schetst de contouren van Artis' gulzige plannen: hoogbouw aan de randen, meer autoverkeer in de buurt.
+Daarná komt de rest. Stapsgewijs. Met afzonderlijke vergunningen. Nog meer horeca, meer bezoekers, minder groen.
 
-Ondertussen wordt Artis voor gewone Amsterdammers steeds onbereikbaarder: €30 voor een volwassene, €27,50 voor een kind. Voor wie is deze uitbreiding eigenlijk bedoeld? Niet voor jouw buurvrouw met AOW.
+NB: voor de gemiddelde Amsterdammer wordt Artis steeds onbereikbaarder. Véél te duur.
 
-Onze eis aan de gemeente: handhaaf. Een afspraak is een afspraak.`,
+Wij vragen de gemeente: geef Artis niet voortdurend haar zin! En check héél goed wat alle grote plannen betekenen voor de Amsterdammers in de buurt.`,
     tags: ["MasterplanArtis", "Amsterdam", "Plantagebuurt", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/salmplein11/1200/900",
     knoppen: []
@@ -186,17 +182,12 @@ Onze eis aan de gemeente: handhaaf. Een afspraak is een afspraak.`,
   {
     id: "2026-09-08",
     datum: "2026-09-08",
-    titel: "De Partij voor de Dieren waarschuwde het al: dit plan gaat over horeca, kantoren en installaties. Niet over dieren.",
+    titel: "Gaan de Artis-plannen over dieren en bezoekers? Of over méér horeca, kantoren en installaties?",
     tekst:
-`Denk aan de foto's van Artis uit je jeugd — of die van je ouders. Groen. Ruim. Dieren op de voorgrond. Blader nu door Masterplan 2030: rendering na rendering van gebouwen. Kantoorruimte. Duurdere horeca. Nauwelijks meer dierenverblijven.
+`Kijk eens goed naar de plannen van Artis: prachtige 'artist impressions' van dure horeca en meer kantoorruimte.
 
-Zelfs de Partij voor de Dieren gaf een openbaar signaal: de plannen leunen sterk op commerciële horeca, kantoorruimtes en massale technische installaties, en veel minder op meer leefruimte voor de dieren zelf. Dat is precies waar wij als omwonenden ook op wijzen.
-
-Een dierentuin die miljoenen aan gemeentesubsidie krijgt voor natuureducatie en dierenwelzijn zou dat geld primair aan díe doelen moeten besteden. Niet aan gebouwen van 14 meter voor douches, kantines en kantoren. Niet aan een horecapaviljoen op het Salmplein dat er onder de noemer "tijdelijk" voor tien jaar bij komt. Niet aan toegangsprijzen waarvoor een gemiddeld Amsterdams gezin drie keer moet nadenken voor het gaat.
-
-Waar zou jij de ruimte in Artis aan besteden — meer dieren, of meer horeca? Aan een dierentuin voor iedereen, of aan een attractiepark voor wie het kan betalen?
-
-Deel dit bericht met iemand die vroeger nog gewoon naar Artis ging. Vraag hoe zij het nu ervaren.`,
+De Partij voor de Dieren waarschuwde al: de plannen gaan allereerst over horeca, kantoorruimtes en enorme technische installaties. Is dat nog te rijmen met alle steun die Artis krijgt van de gemeente?
+Met de gigantische kosten die een dagje Artis betekenen voor een gemiddeld Amsterdams gezin?`,
     tags: ["Artis", "MasterplanArtis", "BurenVanArtis", "LeefbareStad"],
     afbeelding: "https://picsum.photos/seed/dier10/1200/900",
     knoppen: []
@@ -206,37 +197,33 @@ Deel dit bericht met iemand die vroeger nog gewoon naar Artis ging. Vraag hoe zi
   {
     id: "2026-09-01",
     datum: "2026-09-01",
-    titel: "Als het Dienstengebouw op 14 meter komt, ligt er een precedent voor de rest van het park. Voor 100 jaar.",
+    titel: "Als het nieuwe Dienstengebouw 14 meter hoog wordt, staat er een precedent voor de rest van Artis voor tientallen jaren.",
     tekst:
-`Loop straks langs het huis waar je vroeger op kraamvisite kwam. Kijk naar de horizon boven het park. Straks staat daar een muur van 14 meter. Bij de volgende bouwlocatie: nog een muur. Bij de derde: een vesting. Bij de vijfde: onze buurt is niet meer te herkennen.
+`Kijk naar de horizon boven Artis vanaf de hoek Sarphatistraat/Entrepotdok. Straks staat daar een reusachtige 'muur' van 14 meter.
 
-Het klopt niet dat het Dienstengebouw op zichzelf staat. Het is een bewuste eerste steen. Masterplan 2030 wijst langs de randen van het park nog meer bouwlocaties aan voor nieuwe kantoren, technische installaties en horecafuncties. Elke keer dat de gemeente vraagt of 14 meter écht nodig is, wijst Artis naar de vorige beslissing: "Dat mocht toch ook."
+En het klopt níet dat het geplande Dienstengebouw op zichzelf staat. Bij een volgend plan: nóg een muur? En dan nóg een?
+Een onherkenbare Plantagebuurt met een stenen Artis als middelpunt?
 
-De eerste beslissing bepaalt de norm voor de tien jaar erna. Onder de 14 meter blijft de menselijke schaal intact. Erboven verdwijnt die — permanent. En dan hebben we onze 19e-eeuwse wijk verruild voor een vesting, gebouwd voor toeristen die hier nooit gaan wonen.
+Het Masterplan vermeldt aan de randen van het park nog meer bouwlocaties. Voor kantoren (grotendeels verhuurd aan derden), horeca en technische installaties.
+Was dit niet allereerst een DIERENpark?
 
-Nu is het moment. Straks is het niet meer terug te draaien. Wij zijn de laatste generatie die het nog kan tegenhouden.
-
-Lees ons volledige bezwaarschrift en onderteken.`,
+De Buren van Artis trekken aan de bel: wil Amsterdam dit écht? Een grotendeels 19e-eeuwse wijk met een gigantische stenen vesting als middelpunt? Ten koste van Amsterdammers die hier wónen?`,
     tags: ["Entrepotdok", "MasterplanArtis", "Stadsontwikkeling", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/domino9/1200/900",
-    knoppen: [{ label: "Lees en onderteken", url: MANIFEST_URL }]
+    knoppen: []
   },
 
   // ---------- POST 8 — Horecaplein ----------
   {
     id: "2026-08-25",
     datum: "2026-08-25",
-    titel: "Acht horecagelegenheden telt Artis nu al. Masterplan 2030 wil er meer. Voor €30 per volwassene, uiteraard.",
+    titel: "Acht horecagelegenheden en heel veel kantoren… En het Masterplan wil er nóg meer.",
     tekst:
-`Onthoud die keer dat je door Artis liep en iemand hoorde zeggen: "waar zijn de dieren eigenlijk?". Straks weet je waarom.
+`Weet u nog dat u door Artis liep en iemand hoorde zeggen: 'Waar zijn de dieren eigenlijk?'
 
-In Masterplan 2030 worden gebouwen gerestaureerd en historische zichtlijnen hersteld — mooi. Maar bij bijna elke restauratie komt een nieuwe horecagelegenheid, een kantoorfunctie of een uitbreiding. De business case van Artis leunt zwaar op commerciële exploitatie: extra bezoekers (2 miljoen als streefdoel), extra dure horeca, extra kantoor. Een dierentuin die zichzelf steeds meer als attractiepark positioneert.
-
-De NRC schreef laatst een opiniestuk over Eye, dat volgens de auteur te ver was doorgeslagen richting horeca-uitbating in plaats van film. De vergelijking is niet onterecht. Alleen: Eye ligt niet in een woonwijk. Artis wel — en de horecaprijzen die daarbij horen, sluiten Amsterdammers met een gewone portemonnee uit. Eerst uit Artis, straks uit hun eigen buurt.
-
-Ondertussen betalen jij en je buren via belasting mee: Artis krijgt bijna 19 miljoen euro gemeentesubsidie voor natuureducatie, natuurbehoud en maatschappelijk belang.
-
-Wij eisen dat de gemeente de plannen strikt aan díe doelen toetst — niet aan het verdienmodel dat ons zelf buitensluit.`,
+In Masterplan 2030 worden gebouwen gerestaureerd en historische zichtlijnen hersteld. Mooi.
+Maar bij elke restauratie staat ook een horecagelegenheid of een kantoorfunctie gepland.
+Artis' huishoudboekje rust zwaar op commerciële exploitatie. Méér bezoekers, meer horeca, meer kantoorruimte voor verhuur.`,
     tags: ["Artis", "MasterplanArtis", "Amsterdam", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/horeca8/1200/900",
     knoppen: []
