@@ -10,6 +10,25 @@
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#003D28">
 <link rel="canonical" href="https://www.burenvanartis.nl/doelen.html">
+<link rel="alternate" hreflang="nl" href="https://www.burenvanartis.nl/doelen.html">
+<link rel="alternate" hreflang="en" href="https://www.burenvanartis.nl/en/doelen.html">
+<link rel="alternate" hreflang="x-default" href="https://www.burenvanartis.nl/doelen.html">
+
+<!-- Taalkeuze: browsers zonder Nederlands gaan naar /en/ (tenzij de
+     bezoeker al bewust NL koos via de taalschakelaar) -->
+<script>
+(function(){
+  try {
+    if (/bot|crawler|spider|preview|lighthouse/i.test(navigator.userAgent)) return;
+    var keuze = localStorage.getItem("taal");
+    if (keuze === "nl") return;
+    if (keuze === "en") { location.replace("/en/doelen.html"); return; }
+    var talen = navigator.languages || [navigator.language || "nl"];
+    var spreektNederlands = talen.some(function(t){ return /^nl/i.test(t); });
+    if (!spreektNederlands) location.replace("/en/doelen.html");
+  } catch(e){}
+})();
+</script>
 
 <!-- <meta name="google-site-verification" content="VERVANG_MET_JOUW_CODE"> -->
 
@@ -88,6 +107,7 @@
   <nav class="nav">
     <a href="/">Berichten</a>
     <a href="/doelen.html" class="actief">Onze doelen</a>
+    <a href="/en/doelen.html" class="taal" lang="en" hreflang="en" onclick="try{localStorage.setItem('taal','en')}catch(e){}">EN</a>
   </nav>
 </header>
 

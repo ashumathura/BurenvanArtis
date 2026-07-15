@@ -61,6 +61,10 @@ header{
   background:var(--groen); color:var(--groen-diep);
   border-color:var(--groen); font-weight:600;
 }
+.nav a.taal{
+  border-style:dashed; letter-spacing:.06em; font-weight:600;
+  padding:.45rem .85rem;
+}
 
 /* ---------- feed ---------- */
 main{max-width:800px; margin:0 auto; padding:1.5rem 1rem 3rem}
