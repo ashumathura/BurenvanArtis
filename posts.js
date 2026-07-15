@@ -322,7 +322,7 @@ Onze wijk is niet gebouwd op continue festivalstromen. Wat we missen in Masterpl
 
 Herken je dit al? Geef een +1 en deel het bericht met één buur. Straks doen we het samen.`,
     tags: ["Plantagebuurt", "Amsterdam", "MasterplanArtis", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/dorp3/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post3.png",
     knoppen: []
   },
 
