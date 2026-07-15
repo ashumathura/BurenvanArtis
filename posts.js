@@ -312,15 +312,13 @@ Onze vraag: onafhankelijke contra-expertise op de verkeersparagraaf van Masterpl
     datum: "2026-07-21",
     titel: "10.000 mensen per dag door de Plantagebuurt. Dat is heel Monnickendam. Elke dag. In jouw straat.",
     tekst:
-`Bakfiets naar de crèche. Achter je een school. Voor je 10.000 mensen die de ingang zoeken. Kinderen die tussen benen door proberen te komen. Fietsers die schreeuwen. Een ambulance die je pas hoort als hij vlak achter je is.
+`Dit is niet een enkele festival-zaterdag. Dit is dinsdag. En woensdag. En donderdag. Elke zomerdag opnieuw, tien jaar lang. 2 miljoen bezoekers per jaar, verdeeld over de zomermaanden, betekent op piekdagen zo'n 10.000 mensen door onze straten — twee uitverkochte AFAS Live's, dagelijks. De complete populatie van Monnickendam die zich 's ochtends door je straat perst en 's avonds weer vertrekt.
 
-Dit is niet een enkele festival-zaterdag. Dit is dinsdag. En woensdag. En donderdag. Elke zomerdag opnieuw, tien jaar lang. 2 miljoen bezoekers per jaar, verdeeld over de zomermaanden, betekent op piekdagen zo'n 10.000 mensen door onze straten — twee uitverkochte AFAS Live's, dagelijks. De complete populatie van Monnickendam die zich 's ochtends door je straat perst en 's avonds weer vertrekt.
-
-Hulpdiensten die er niet doorheen komen. Bewoners die niet in of uit hun eigen huis kunnen. Bakfietsen die minutenlang stilstaan tussen twee voordeuren. Meer uitstoot van al die voertuigen die met de motor aan staan te wachten.
+Hulpdiensten die er niet doorheen komen. Bakfietsen die de stoep blokkeren. Meer uitstoot van al die voertuigen die met de motor aan staan te wachten.
 
 Onze wijk is niet gebouwd op continue festivalstromen. Wat we missen in Masterplan 2030 is één cijfer: een harde bovengrens voor bezoekers. Een cijfer dat past bij 14 hectare in een woonwijk.
 
-Herken je dit al? Geef een +1 en deel het bericht met één buur. Straks doen we het samen.`,
+Herken je dit al? Geef een +1 en deel het bericht met één buur. Straks doen we het samen. Alleen samen kunnen we er iets aan doen.`,
     tags: ["Plantagebuurt", "Amsterdam", "MasterplanArtis", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post3.png",
     knoppen: []
@@ -332,13 +330,11 @@ Herken je dit al? Geef een +1 en deel het bericht met één buur. Straks doen we
     datum: "2026-07-14",
     titel: "Blijdorp: 26 hectare, 1,5 miljoen. Artis: 14 hectare, wil 2 miljoen. De drukste dierentuin per m² van Nederland — dat wíllen ze zijn.",
     tekst:
-`Loop straks een blokje om je huis heen. Elke vierkante meter tussen jouw voordeur en het einde van je straat gaat straks meer bezoekers dragen dan Blijdorp — dat op de rand van de stad ligt, met eigen parkeerterreinen ter grootte van een half stadion.
+`Blijdorp is bijna twee keer zo groot als Artis en zit onder de 1,5 miljoen. De Efteling heeft 72 hectare bos en een eigen snelwegafslag voor 5,4 miljoen bezoekers. Wij hebben 14 hectare en 19e-eeuwse straatjes. Daar wil Artis 2 miljoen bezoekers op persen. Als dit lukt, wordt Artis de dierentuin met het grootste aantal bezoekers per vierkante meter — in ónze buurt.
 
-Blijdorp is bijna twee keer zo groot als Artis en zit onder de 1,5 miljoen. De Efteling heeft 72 hectare bos en een eigen snelwegafslag voor 5,4 miljoen bezoekers. Wij hebben 14 hectare en 19e-eeuwse straatjes. En Artis wil de drukste dierentuin per vierkante meter van Nederland worden — in ónze buurt.
+In Masterplan 2030 wordt de aanname van 2 miljoen bezoekers gebruikt om hoogbouw op de randen van het park, een grotere parkeergarage en meer horeca te legitimeren. Als de aanname te ambitieus is, valt het hele bouwprogramma anders uit. Als de aanname blijft, valt onze buurt anders uit: verstopte straten, viezere lucht, hulpdiensten die vast staan in het verkeer.
 
-In Masterplan 2030 wordt de aanname van 2 miljoen bezoekers gebruikt om hoogbouw op de randen van het park, een grotere parkeergarage en meer horeca te legitimeren. Als de aanname te ambitieus is, valt het hele bouwprogramma anders uit. Als de aanname blijft, valt onze buurt anders uit: viezere lucht, hulpdiensten die niet doorkomen, prijzen die de gewone Amsterdammer buitensluiten.
-
-Ken jij iemand die om de hoek van Artis woont, of vroeger woonde? Stuur ze dit bericht door. Iedereen moet weten wat er aankomt. Zwijgen kost ons de buurt.`,
+Ken jij iemand die om de hoek van Artis woont, of vroeger woonde? Stuur ze dit bericht door. Iedereen moet weten wat er aankomt. Wie zwijgt stemt toe.`,
     tags: ["Artis", "MasterplanArtis", "Stadsontwikkeling", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post2.png",
     knoppen: []
@@ -350,11 +346,11 @@ Ken jij iemand die om de hoek van Artis woont, of vroeger woonde? Stuur ze dit b
     datum: "2026-07-07",
     titel: "1.271.612 bezoekers in 2025. Masterplan 2030 mikt op 2 miljoen. Om de drukste dierentuin per m² van het land te worden.",
     tekst:
-`Denk terug aan de drukste zomerse zaterdag die je vorig jaar meemaakte in de Plantage Kerklaan. Fietsen tussen de bakfietsen, bezoekers met plattegronden op je stoep, een kruispunt dat niet meer opschoot. Vermenigvuldig die dag met 1,6. Dagelijks, in de zomer. En elke dag krijgen we er meer stapels uitstoot bij van de auto's die op de nieuwe grotere parkeergarage afkomen.
+`Denk terug aan de drukste zomerse zaterdag die je vorig jaar meemaakte in de Plantage Kerklaan. Fietsen tussen de bakfietsen, bezoekers met plattegronden op je stoep, stagnatie voor een kruispunt. Vermenigvuldig die dag met 1,6. Dagelijks, in de zomer. En elke dag meer uitstoot van de auto's die op de nieuwe grotere parkeergarage afkomen.
 
-Artis is 14 hectare — een postzegel, midden in een 19e-eeuwse woonwijk. Ter vergelijking: Beekse Bergen heeft 120 hectare voor 1,5 miljoen bezoekers. Onze wijk zit al opgescheept met de drukste dierentuin per vierkante meter van Nederland — en Masterplan 2030 wil daar bovenop.
+Artis is 14 hectare groot — een postzegel, midden in een 19e-eeuwse woonwijk. Ter vergelijking: Beekse Bergen heeft 120 hectare voor 1,5 miljoen bezoekers. Onze wijk zit nu al opgescheept met de drukste dierentuin per vierkante meter van Nederland — en Masterplan 2030 wil daar nog een schepje bovenop doen.
 
-Het argument dat "dynamic pricing" de piek zal spreiden, is in de hele attractiesector nooit bewezen. Wat het streefgetal van 2 miljoen wél doet: het legitimeert de hoogbouw op de randen van het park. De grotere parkeergarage. De duurdere horeca. Kortom: het legitimeert dat onze buurt wordt volgebouwd, dat de lucht viezer wordt, en dat Artis onbereikbaar wordt voor mensen met een gewone portemonnee.
+Het argument dat "dynamic pricing" de piek zal spreiden, is in de hele attractiesector nooit bewezen. Wat het streefgetal van 2 miljoen wél doet: het legitimeert de hoogbouw op de randen van het park. De grotere parkeergarage. De toegenomen horeca. Kortom: het legitimeert dat onze buurt wordt volgebouwd, minder groen oogt en lawaaiiger wordt.
 
 Wij vragen: leg in Masterplan 2030 een harde bovengrens vast die past bij 14 hectare in een woonwijk. Niet 2 miljoen. En niet ten koste van deze buurt.`,
     tags: ["Artis", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
