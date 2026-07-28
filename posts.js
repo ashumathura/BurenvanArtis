@@ -302,7 +302,7 @@ De Kalverstraat kan 60.000 bezoekers op een zaterdag verwerken omdat er brede st
 
 Onze vraag: onafhankelijke contra-expertise op de verkeersparagraaf van Masterplan 2030. Meld je aan onderaan de pagina — dan hoor je wanneer we die stap zetten.`,
     tags: ["Plantagebuurt", "Amsterdam", "LeefbareStad", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/logistiek4/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post4.png",
     knoppen: []
   },
 
