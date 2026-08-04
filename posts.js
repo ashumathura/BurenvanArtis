@@ -282,7 +282,7 @@ Wij vragen niet om beloftes. Wij eisen meetgaranties in het masterplan, met sanc
 
 Verduurzaming steunen we volledig. Slaaploos wakker liggen aan een mug die nooit weggaat: niet.`,
     tags: ["Plantagebuurt", "LeefbareStad", "MasterplanArtis", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/mug5/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post5.png",
     knoppen: []
   },
 
