@@ -262,7 +262,7 @@ De akoestiek van boten, terrassen en verkeer op de kade zal daardoor sterk verst
 
 Onze vraag: een onafhankelijk akoestisch onderzoek vóórdat de bouw onherroepelijk is. Vraag maar — of wij vragen het straks voor jouw slaapkamer.`,
     tags: ["Entrepotdok", "LeefbareStad", "MasterplanArtis", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/kade6/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post6.png",
     knoppen: []
   },
 
