@@ -244,7 +244,7 @@ We hebben concreet voorgesteld die niet-technische functies elders in het park o
 
 Onderteken ons Manifest. Help ons de zon terug te vechten voordat de muur er staat.`,
     tags: ["Entrepotdok", "MasterplanArtis", "LeefbareStad", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/zon7/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post7.png",
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
