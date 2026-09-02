@@ -208,7 +208,7 @@ Was dit niet allereerst een DIERENpark?
 
 De Buren van Artis trekken aan de bel: wil Amsterdam dit écht? Een grotendeels 19e-eeuwse wijk met een gigantische stenen vesting als middelpunt? Ten koste van Amsterdammers die hier wónen?`,
     tags: ["Entrepotdok", "MasterplanArtis", "Stadsontwikkeling", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/domino9/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post9.png",
     knoppen: []
   },
 
