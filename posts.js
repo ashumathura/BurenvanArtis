@@ -224,7 +224,7 @@ In Masterplan 2030 worden gebouwen gerestaureerd en historische zichtlijnen hers
 Maar bij elke restauratie staat ook een horecagelegenheid of een kantoorfunctie gepland.
 Artis' huishoudboekje rust zwaar op commerciële exploitatie. Méér bezoekers, meer horeca, meer kantoorruimte voor verhuur.`,
     tags: ["Artis", "MasterplanArtis", "Amsterdam", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/horeca8/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post8.png",
     knoppen: []
   },
 
