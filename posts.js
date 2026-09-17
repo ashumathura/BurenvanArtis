@@ -155,6 +155,22 @@ Wilt u dat ook? Meld u aan onderaan de pagina!`,
     knoppen: []
   },
 
+  // ---------- POST 12b — Verdeel en heers ----------
+  {
+    id: "2026-09-17",
+    datum: "2026-09-17",
+    titel: "Verdeel en heers: Artis knipt Masterplan 2030 op in hoekjes, zodat de hele buurt nooit samen in verzet komt.",
+    tekst:
+`Verdeel en heers.
+
+Alle buren krijgen ermee te maken: meer drukte, meer auto's, meer fietsen op de stoep, meer steen aan de randen. Goede basis voor gezamenlijk protest, dat zou je denken toch? Maar Artis presenteert zijn plannen per 'hoek'. En een parkeergarage bij de Nijlpaardenbrug brengt buren uit de Plantage Middenlaan niet op de been. En wat kan de hoogbouw bij het Entrepotdok een Plantage Kerklaan bewoner schelen?
+
+Kom op voor ons gezamenlijk belang! Teken het manifest.`,
+    tags: ["Participatie", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
+    afbeelding: "https://picsum.photos/seed/verdeelheers/1200/900",
+    knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
+  },
+
   // ---------- POST 11 — Salmplein 10 jaar ----------
   {
     id: "2026-09-15",
