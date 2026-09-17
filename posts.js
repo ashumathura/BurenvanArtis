@@ -193,6 +193,26 @@ Wij vragen de gemeente: geef Artis niet voortdurend haar zin! En check héél go
     knoppen: []
   },
 
+  // ---------- POST 10b — Laagfrequent geluid WKO ----------
+  {
+    id: "2026-09-10",
+    datum: "2026-09-10",
+    titel: "Denk je dat WKO-geluidsoverlast alleen de directe buren raakt? Laagfrequent geluid draagt veel verder — en het geluidsonderzoek van Artis gaat er niet op in.",
+    tekst:
+`Ver van je bed?
+
+Geluidsoverlast van het WKO-gebouw, alleen voor de directe buren? Droom verder — of kom in actie. Installaties zoals een WKO produceren vaak een door alles heendringende bromtoon, tot ver in de omtrek. Het zogenaamde laagfrequente geluid. Niet iedereen hoort dit, maar als jouw gehoororgaan het wél oppikt, ben je de pineut: je wordt niet serieus genomen, en aan de wet heb je (nog) niks.
+
+Het door Artis uitgevoerde geluidsonderzoek gaat niet in op het probleem van laagfrequente geluidsproductie.
+
+Maar wij willen keiharde garanties dat het getackeld wordt.
+
+Voorkom dat je straks zelf met de bewijslast zit! Teken het manifest.`,
+    tags: ["Entrepotdok", "MasterplanArtis", "LeefbareStad", "BurenVanArtis"],
+    afbeelding: "https://picsum.photos/seed/laagfrequent/1200/900",
+    knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
+  },
+
   // ---------- POST 10 — Pretpark vs dierenwelzijn ----------
   {
     id: "2026-09-08",
