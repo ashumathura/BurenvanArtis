@@ -263,9 +263,26 @@ footer a{color:var(--grijs-donker)}
   margin:0 0 .5rem; color:var(--groen-diep); letter-spacing:-.01em;
 }
 .hero-lead{
-  margin:0 0 1.5rem; color:var(--grijs-donker);
-  font-size:1rem; max-width:52ch;
+  margin:0 0 1.7rem; color:var(--grijs-donker);
+  font-size:1rem;
 }
+.groei-lijst{
+  list-style:none; padding:0; margin:0 0 1.6rem;
+  display:flex; flex-direction:column;
+}
+.groei-lijst li{
+  display:flex; align-items:flex-start; gap:.65rem;
+  padding:.7rem 0; border-bottom:1px solid var(--grijs-licht);
+}
+.groei-lijst li:last-child{border-bottom:0}
+.groei-icon{
+  flex-shrink:0; font-size:1.05rem; line-height:1.5;
+  width:1.4rem; text-align:center;
+}
+.groei-lijst p{margin:0; font-size:.92rem; line-height:1.55}
+.groei-lijst strong{color:var(--tekst); font-weight:600}
+.groei-lijst .detail{color:var(--grijs-donker)}
+
 .dreigt-grid{
   display:grid; grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
   gap:.8rem; margin-bottom:1.6rem;
