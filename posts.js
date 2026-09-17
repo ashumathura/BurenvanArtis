@@ -175,12 +175,12 @@ Kom op voor ons gezamenlijk belang! Teken het manifest.`,
   {
     id: "2026-09-15",
     datum: "2026-09-15",
-    titel: "'Tijdelijk' horecapaviljoen op het Salmplein. Vergunning aangevraagd voor 10 jaar.",
+    titel: "'Tijdelijk' horecapaviljoen op het Salmplein. Vergunning verkregen voor 10 jaar.",
     tekst:
 `Let op het woord 'tijdelijk'! Een kind dat in 2026 leert lezen, doet gemiddeld rond 2036 eindexamen. Dát is dus 'tijdelijk'.
 En, zoals heel vaak in onze stad: 'tijdelijk' wordt meestal 'vast'.
 
-Artis wil een tijdelijke vergunning voor een nieuw, groot horecapaviljoen op het Salmplein. Verrassing voor de buurt…
+Artis heeft een tijdelijke vergunning voor een nieuw, groot horecapaviljoen op het Salmplein. Verrassing voor de buurt…
 
 Het Masterplan schetst de contouren van Artis' gulzige plannen: hoogbouw aan de randen, meer autoverkeer in de buurt.
 Daarná komt de rest. Stapsgewijs. Met afzonderlijke vergunningen. Nog meer horeca, meer bezoekers, minder groen.
@@ -189,7 +189,7 @@ NB: voor de gemiddelde Amsterdammer wordt Artis steeds onbereikbaarder. Véél t
 
 Wij vragen de gemeente: geef Artis niet voortdurend haar zin! En check héél goed wat alle grote plannen betekenen voor de Amsterdammers in de buurt.`,
     tags: ["MasterplanArtis", "Amsterdam", "Plantagebuurt", "BurenVanArtis"],
-    afbeelding: "https://www.burenvanartis.nl/images/post11.png",
+    afbeelding: "images/post11.png",
     knoppen: []
   },
 
