@@ -167,7 +167,7 @@ Alle buren krijgen ermee te maken: meer drukte, meer auto's, meer fietsen op de 
 
 Kom op voor ons gezamenlijk belang! Teken het manifest.`,
     tags: ["Participatie", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/verdeelheers/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post12.png",
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
@@ -189,7 +189,7 @@ NB: voor de gemiddelde Amsterdammer wordt Artis steeds onbereikbaarder. Véél t
 
 Wij vragen de gemeente: geef Artis niet voortdurend haar zin! En check héél goed wat alle grote plannen betekenen voor de Amsterdammers in de buurt.`,
     tags: ["MasterplanArtis", "Amsterdam", "Plantagebuurt", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/salmplein11/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post11.png",
     knoppen: []
   },
 
@@ -209,7 +209,7 @@ Maar wij willen keiharde garanties dat het getackeld wordt.
 
 Voorkom dat je straks zelf met de bewijslast zit! Teken het manifest.`,
     tags: ["Entrepotdok", "MasterplanArtis", "LeefbareStad", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/laagfrequent/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post5.png",
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
@@ -224,7 +224,7 @@ Voorkom dat je straks zelf met de bewijslast zit! Teken het manifest.`,
 De Partij voor de Dieren waarschuwde al: de plannen gaan allereerst over horeca, kantoorruimtes en enorme technische installaties. Is dat nog te rijmen met alle steun die Artis krijgt van de gemeente?
 Met de gigantische kosten die een dagje Artis betekenen voor een gemiddeld Amsterdams gezin?`,
     tags: ["Artis", "MasterplanArtis", "BurenVanArtis", "LeefbareStad"],
-    afbeelding: "https://picsum.photos/seed/dier10/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post10.png",
     knoppen: []
   },
 
