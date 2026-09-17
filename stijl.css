@@ -271,8 +271,8 @@ footer a{color:var(--grijs-donker)}
   display:flex; flex-direction:column;
 }
 .groei-lijst li{
-  display:flex; align-items:flex-start; gap:.65rem;
-  padding:.7rem 0; border-bottom:1px solid var(--grijs-licht);
+  display:flex; align-items:flex-start; gap:.6rem;
+  padding:.5rem 0; border-bottom:1px solid var(--grijs-licht);
 }
 .groei-lijst li:last-child{border-bottom:0}
 .groei-icon{
