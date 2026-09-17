@@ -155,6 +155,22 @@ Wilt u dat ook? Meld u aan onderaan de pagina!`,
     knoppen: []
   },
 
+  // ---------- POST 12b — Verdeel en heers ----------
+  {
+    id: "2026-09-17",
+    datum: "2026-09-17",
+    titel: "Verdeel en heers: Artis knipt Masterplan 2030 op in hoekjes, zodat de hele buurt nooit samen in verzet komt.",
+    tekst:
+`Verdeel en heers.
+
+Alle buren krijgen ermee te maken: meer drukte, meer auto's, meer fietsen op de stoep, meer steen aan de randen. Goede basis voor gezamenlijk protest, dat zou je denken toch? Maar Artis presenteert zijn plannen per 'hoek'. En een parkeergarage bij de Nijlpaardenbrug brengt buren uit de Plantage Middenlaan niet op de been. En wat kan de hoogbouw bij het Entrepotdok een Plantage Kerklaan bewoner schelen?
+
+Kom op voor ons gezamenlijk belang! Teken het manifest.`,
+    tags: ["Participatie", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
+    afbeelding: "https://picsum.photos/seed/verdeelheers/1200/900",
+    knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
+  },
+
   // ---------- POST 11 — Salmplein 10 jaar ----------
   {
     id: "2026-09-15",
@@ -175,6 +191,26 @@ Wij vragen de gemeente: geef Artis niet voortdurend haar zin! En check héél go
     tags: ["MasterplanArtis", "Amsterdam", "Plantagebuurt", "BurenVanArtis"],
     afbeelding: "https://picsum.photos/seed/salmplein11/1200/900",
     knoppen: []
+  },
+
+  // ---------- POST 10b — Laagfrequent geluid WKO ----------
+  {
+    id: "2026-09-10",
+    datum: "2026-09-10",
+    titel: "Denk je dat WKO-geluidsoverlast alleen de directe buren raakt? Laagfrequent geluid draagt veel verder — en het geluidsonderzoek van Artis gaat er niet op in.",
+    tekst:
+`Ver van je bed?
+
+Geluidsoverlast van het WKO-gebouw, alleen voor de directe buren? Droom verder — of kom in actie. Installaties zoals een WKO produceren vaak een door alles heendringende bromtoon, tot ver in de omtrek. Het zogenaamde laagfrequente geluid. Niet iedereen hoort dit, maar als jouw gehoororgaan het wél oppikt, ben je de pineut: je wordt niet serieus genomen, en aan de wet heb je (nog) niks.
+
+Het door Artis uitgevoerde geluidsonderzoek gaat niet in op het probleem van laagfrequente geluidsproductie.
+
+Maar wij willen keiharde garanties dat het getackeld wordt.
+
+Voorkom dat je straks zelf met de bewijslast zit! Teken het manifest.`,
+    tags: ["Entrepotdok", "MasterplanArtis", "LeefbareStad", "BurenVanArtis"],
+    afbeelding: "https://picsum.photos/seed/laagfrequent/1200/900",
+    knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
   // ---------- POST 10 — Pretpark vs dierenwelzijn ----------
