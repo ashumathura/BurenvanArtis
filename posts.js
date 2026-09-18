@@ -151,7 +151,7 @@ Gevolgen voor de buurt: meer schadelijke uitstoot, onveilige stoepen en straten,
 De Buren van Artis pleiten voor onafhankelijke contra-expertise: uitgebreid onderzoek naar de extra verkeersstromen als gevolg van Artis' plannen.
 Wilt u dat ook? Meld u aan onderaan de pagina!`,
     tags: ["Plantagebuurt", "Amsterdam", "LeefbareStad", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/verkeer12/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post13.png",
     knoppen: []
   },
 
@@ -167,7 +167,7 @@ Alle buren krijgen ermee te maken: meer drukte, meer auto's, meer fietsen op de 
 
 Kom op voor ons gezamenlijk belang! Teken het manifest.`,
     tags: ["Participatie", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
-    afbeelding: "images/post12.png",
+    afbeelding: "https://www.burenvanartis.nl/images/post12.png",
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
@@ -189,7 +189,7 @@ NB: voor de gemiddelde Amsterdammer wordt Artis steeds onbereikbaarder. Véél t
 
 Wij vragen de gemeente: geef Artis niet voortdurend haar zin! En check héél goed wat alle grote plannen betekenen voor de Amsterdammers in de buurt.`,
     tags: ["MasterplanArtis", "Amsterdam", "Plantagebuurt", "BurenVanArtis"],
-    afbeelding: "images/post11.png",
+    afbeelding: "https://www.burenvanartis.nl/images/post11.png",
     knoppen: []
   },
 
