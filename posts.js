@@ -182,7 +182,7 @@ En, zoals heel vaak in onze stad: 'tijdelijk' wordt meestal 'vast'.
 
 Artis heeft een tijdelijke vergunning voor een nieuw, groot horecapaviljoen op het Salmplein. Verrassing voor de buurt…
 
-Het Masterplan schetst de contouren van Artis' gulzige plannen: hoogbouw aan de randen, meer autoverkeer in de buurt.
+Het Masterplan schetst de contouren van de Artis plannen: hoogbouw aan de randen, meer autoverkeer in de buurt.
 Daarná komt de rest. Stapsgewijs. Met afzonderlijke vergunningen. Nog meer horeca, meer bezoekers, minder groen.
 
 NB: voor de gemiddelde Amsterdammer wordt Artis steeds onbereikbaarder. Véél te duur.
