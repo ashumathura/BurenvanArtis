@@ -167,7 +167,7 @@ Alle buren krijgen ermee te maken: meer drukte, meer auto's, meer fietsen op de 
 
 Kom op voor ons gezamenlijk belang! Teken het manifest.`,
     tags: ["Participatie", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
-    afbeelding: "images/Post12.png",
+    afbeelding: "images/post12.png",
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
