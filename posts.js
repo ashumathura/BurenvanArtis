@@ -55,7 +55,7 @@ Níet voor commerciële expansie in een woonwijk!
 
 Deel dit bericht met uw stadsdeelbestuurder of gemeenteraadslid. Laat ze horen wat ze liever níet horen!`,
     tags: ["Amsterdam", "Stadsontwikkeling", "LeefbareStad", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/stopera17/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post3.png",
     knoppen: []
   },
 
@@ -76,7 +76,7 @@ Laat dat niet gebeuren!
 
 Mail uw ervaringen met de participatie en uw mening over de plannen naar ${CONTACT_EMAIL}`,
     tags: ["Participatie", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/grafiek16/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post13.png",
     knoppen: []
   },
 
@@ -96,7 +96,7 @@ De buurt heeft alternatieven aangedragen, waar Artis niet voor openstaat. Artis 
 
 Onderteken het Manifest! Steun de WKO, maar kom in actie tegen nodeloze hoogbouw!`,
     tags: ["MasterplanArtis", "Entrepotdok", "LeefbareStad", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/weegschaal15/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post7.png",
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
@@ -113,7 +113,7 @@ Buren van Artis roept de gemeente op: toets de Artis-plannen nu écht op massa, 
 
 Deel dit bericht als u genoeg heeft van greenwashing ten koste van de Plantagebuurt!`,
     tags: ["Entrepotdok", "MasterplanArtis", "Stadsontwikkeling", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/muur14/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post6.png",
     knoppen: []
   },
 
@@ -131,7 +131,7 @@ Als Artis deze grenzen niet respecteert, komen er de volgende jaren ongetwijfeld
 
 TEKEN HET MANIFEST NÚ!`,
     tags: ["Plantagebuurt", "LeefbareStad", "MasterplanArtis", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/schaal13/1200/900",
+    afbeelding: "https://www.burenvanartis.nl/images/post2.png",
     knoppen: [{ label: "Teken het Manifest nú!", url: MANIFEST_URL }]
   },
 
@@ -151,7 +151,7 @@ Gevolgen voor de buurt: meer schadelijke uitstoot, onveilige stoepen en straten,
 De Buren van Artis pleiten voor onafhankelijke contra-expertise: uitgebreid onderzoek naar de extra verkeersstromen als gevolg van Artis' plannen.
 Wilt u dat ook? Meld u aan onderaan de pagina!`,
     tags: ["Plantagebuurt", "Amsterdam", "LeefbareStad", "BurenVanArtis"],
-    afbeelding: "https://www.burenvanartis.nl/images/post13.png",
+    afbeelding: "https://www.burenvanartis.nl/images/post4.png",
     knoppen: []
   },
 
