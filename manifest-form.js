@@ -43,8 +43,11 @@
 
   // ---------- teller ophalen ----------
   async function laadTeller(){
-    const tellerEl = document.getElementById("manifest-teller");
-    if (!tellerEl || !supabaseAan) return;
+    const tellerEls = [
+      document.getElementById("manifest-teller"),
+      document.getElementById("hero-teller")
+    ].filter(Boolean);
+    if (!tellerEls.length || !supabaseAan) return;
     try {
       const r = await fetch(`${SUPABASE_URL}/rest/v1/rpc/manifest_teller`, {
         method: "POST",
@@ -57,8 +60,10 @@
       });
       const n = await r.json();
       if (typeof n === "number" && n > 0) {
-        tellerEl.textContent = T.teller(n);
-        tellerEl.style.display = "block";
+        tellerEls.forEach(tellerEl => {
+          tellerEl.textContent = T.teller(n);
+          tellerEl.style.display = "block";
+        });
       }
     } catch(e){ console.warn("Kon manifest-teller niet laden", e); }
   }
