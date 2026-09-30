@@ -333,16 +333,17 @@ footer a{color:var(--grijs-donker)}
   display:flex; flex-wrap:wrap; gap:.6rem; align-items:center;
 }
 
-/* ---------- manifest formulier ---------- */
-.manifest-sectie{
+/* ---------- manifest formulier (en het contactformulier, zelfde stijl) ---------- */
+.manifest-sectie, .contact-sectie{
   background:var(--groen-diep); color:#F4F7F2;
   border-radius:var(--radius); padding:2rem 1.6rem;
   margin:2rem 0;
 }
-.manifest-sectie h2{
+.manifest-sectie h2, .contact-sectie h2{
   font-weight:700; font-size:1.5rem; margin:0 0 .4rem;
   color:var(--groen); letter-spacing:-.01em;
 }
+.contact-sectie p{color:#CFE8DA; margin:0 0 1.2rem}
 .manifest-eisen{
   list-style:none; padding:0; margin:.8rem 0 1.4rem;
   display:flex; flex-direction:column; gap:.45rem;
@@ -365,58 +366,65 @@ footer a{color:var(--grijs-donker)}
   color:var(--groen); font-size:1.1rem; margin-bottom:1rem;
 }
 
-.manifest-grid{
+.manifest-grid, .contact-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
   gap:.6rem .8rem;
 }
-.manifest-grid .breed{grid-column:1 / -1}
-.manifest-grid label{
+.manifest-grid .breed, .contact-grid .breed{grid-column:1 / -1}
+.manifest-grid label, .contact-grid label{
   display:flex; flex-direction:column; gap:.25rem;
   font-size:.85rem; font-weight:500; color:#CFE8DA;
 }
-.manifest-grid input{
+.manifest-grid input, .contact-grid input, .contact-grid select, .contact-grid textarea{
   padding:.7rem .9rem; border-radius:10px; border:1.5px solid rgba(255,255,255,.15);
   background:rgba(255,255,255,.08); color:#fff;
   font-family:'Poppins',sans-serif; font-size:.95rem;
   transition:border-color .15s;
 }
-.manifest-grid input:focus{
+.manifest-grid input:focus, .contact-grid input:focus, .contact-grid select:focus, .contact-grid textarea:focus{
   outline:none; border-color:var(--groen);
   background:rgba(255,255,255,.12);
 }
-.manifest-grid input::placeholder{color:rgba(255,255,255,.35)}
+.manifest-grid input::placeholder, .contact-grid input::placeholder, .contact-grid textarea::placeholder{
+  color:rgba(255,255,255,.35);
+}
+.contact-grid textarea{resize:vertical; min-height:7rem; font-family:'Poppins',sans-serif}
+.contact-grid select{appearance:auto; cursor:pointer}
+.contact-grid select:invalid{color:rgba(255,255,255,.35)}
+.contact-grid select option{color:var(--tekst)}
+.contact-hp{position:absolute; left:-9999px; top:auto}
 
-.manifest-submit{
+.manifest-submit, .contact-submit{
   grid-column:1 / -1; margin-top:.5rem;
   font-family:'Poppins',sans-serif; font-weight:600; font-size:1.05rem;
   padding:.8rem 1.4rem; border-radius:999px; border:0; cursor:pointer;
   background:var(--groen); color:var(--groen-diep);
   transition:background .15s;
 }
-.manifest-submit:hover{background:#fff}
-.manifest-submit:disabled{opacity:.5; cursor:wait}
+.manifest-submit:hover, .contact-submit:hover{background:#fff}
+.manifest-submit:disabled, .contact-submit:disabled{opacity:.5; cursor:wait}
 
-.manifest-fout{
+.manifest-fout, .contact-fout{
   display:none; grid-column:1 / -1;
   background:#FEE2E2; color:#991B1B;
   padding:.65rem 1rem; border-radius:10px;
   font-size:.9rem; font-weight:500;
 }
-.manifest-ok{
+.manifest-ok, .contact-ok{
   display:none; text-align:center; padding:2rem 1.5rem;
   background:#F4F7F2; color:var(--groen-diep);
   border-radius:16px; border:2px solid var(--groen);
   box-shadow:0 8px 28px rgba(0,0,0,.22);
   animation:manifest-ok-pop .35s ease-out;
 }
-.manifest-ok:focus{outline:none}
+.manifest-ok:focus, .contact-ok:focus{outline:none}
 .manifest-ok-icon{font-size:2.75rem; line-height:1; margin-bottom:.6rem}
-.manifest-ok h3{
+.manifest-ok h3, .contact-ok h3{
   font-weight:700; font-size:1.5rem; color:var(--groen-diep);
   margin:0 0 .5rem;
 }
-.manifest-ok p{color:#375247; margin:.3rem 0}
+.manifest-ok p, .contact-ok p{color:#375247; margin:.3rem 0}
 
 @keyframes manifest-ok-pop{
   from{opacity:0; transform:scale(.94) translateY(8px)}
@@ -424,6 +432,6 @@ footer a{color:var(--grijs-donker)}
 }
 
 @media (max-width:520px){
-  .manifest-grid{grid-template-columns:1fr}
-  .manifest-sectie{padding:1.6rem 1.25rem}
+  .manifest-grid, .contact-grid{grid-template-columns:1fr}
+  .manifest-sectie, .contact-sectie{padding:1.6rem 1.25rem}
 }
