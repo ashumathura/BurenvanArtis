@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Buren van Artis | Manifest Behoud Plantagebuurt</title>
+<meta name="description" content="Neem contact op met Buren van Artis: vragen, meedenken, ervaringen delen of persvragen over Masterplan 2030 en de Plantagebuurt Amsterdam.">
+<meta name="keywords" content="Buren van Artis contact, Masterplan 2030 Artis, Plantagebuurt Amsterdam, bewonerscollectief">
+<meta name="author" content="Buren van Artis">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="theme-color" content="#003D28">
+<link rel="canonical" href="https://www.burenvanartis.nl/contact.html">
+<link rel="alternate" hreflang="nl" href="https://www.burenvanartis.nl/contact.html">
+<link rel="alternate" hreflang="en" href="https://www.burenvanartis.nl/en/contact.html">
+<link rel="alternate" hreflang="x-default" href="https://www.burenvanartis.nl/contact.html">
+
+<!-- Taalkeuze: browsers zonder Nederlands gaan naar /en/ (tenzij de
+     bezoeker al bewust NL koos via de taalschakelaar) -->
+<script>
+(function(){
+  try {
+    if (/bot|crawler|spider|preview|lighthouse/i.test(navigator.userAgent)) return;
+    var keuze = localStorage.getItem("taal");
+    if (keuze === "nl") return;
+    if (keuze === "en") { location.replace("/en/contact.html"); return; }
+    var talen = navigator.languages || [navigator.language || "nl"];
+    var spreektNederlands = talen.some(function(t){ return /^nl/i.test(t); });
+    if (!spreektNederlands) location.replace("/en/contact.html");
+  } catch(e){}
+})();
+</script>
+
+<!-- <meta name="google-site-verification" content="VERVANG_MET_JOUW_CODE"> -->
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Buren van Artis">
+<meta property="og:title" content="Contact — Buren van Artis">
+<meta property="og:description" content="Heb je een vraag, wil je meedenken, of iets met ons delen? Neem contact op met Buren van Artis.">
+<meta property="og:url" content="https://www.burenvanartis.nl/contact.html">
+<meta property="og:image" content="https://www.burenvanartis.nl/images/og-cover.jpg">
+<meta property="og:image:alt" content="Buren van Artis — voor een leefbare Plantagebuurt">
+<meta property="og:locale" content="nl_NL">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Contact — Buren van Artis">
+<meta name="twitter:description" content="Neem contact op met Buren van Artis.">
+<meta name="twitter:image" content="https://www.burenvanartis.nl/images/og-cover.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="stijl.css">
+<link rel="icon" href="images/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<!-- JSON-LD: contactpagina als gestructureerde data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "Contact — Buren van Artis",
+  "url": "https://www.burenvanartis.nl/contact.html",
+  "inLanguage": "nl-NL",
+  "description": "Neem contact op met burgercollectief Buren van Artis.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "Buren van Artis",
+    "url": "https://www.burenvanartis.nl/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Buren van Artis",
+    "email": "iksteun@burenvanartis.nl"
+  }
+}
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4R6ZJPGEWZ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'AW-18309585962');
+  gtag('config', 'G-4R6ZJPGEWZ');
+</script>
+</head>
+<body>
+
+<header>
+  <h1 class="merk">Buren <span class="van">van</span> Artis</h1>
+  <p class="onderkop">Voor een leefbare buurt en échte participatie</p>
+  <nav class="nav">
+    <a href="/">Berichten</a>
+    <a href="/doelen.html">Onze doelen</a>
+    <a href="/contact.html" class="actief">Contact</a>
+    <a href="/en/contact.html" class="taal" lang="en" hreflang="en" onclick="try{localStorage.setItem('taal','en')}catch(e){}">EN</a>
+  </nav>
+</header>
+
+<main>
+  <h2 class="doelen-kop">Neem contact op</h2>
+  <p class="intro">Heb je een vraag, wil je meedenken, of iets met ons delen? Laat het weten — we lezen alles.</p>
+
+  <section class="contact-sectie" id="contact">
+    <h2>Stuur ons een bericht</h2>
+    <p>We reageren zo snel mogelijk, meestal binnen een paar dagen.</p>
+    <div id="contact-formulier">
+      <form id="contact-form" class="contact-grid" novalidate>
+        <label>Voornaam <input type="text" name="voornaam" autocomplete="given-name" placeholder="Jan" required></label>
+        <label>Achternaam <input type="text" name="achternaam" autocomplete="family-name" placeholder="Jansen" required></label>
+        <label class="breed">E-mailadres <input type="email" name="email" autocomplete="email" placeholder="jouw@email.nl" required></label>
+        <label class="breed">Onderwerp
+          <select name="onderwerp" required>
+            <option value="" disabled selected>Kies een onderwerp</option>
+            <option value="Algemene vraag">Algemene vraag</option>
+            <option value="Meedoen als vrijwilliger">Meedoen als vrijwilliger</option>
+            <option value="Ervaring of melding delen">Ervaring of melding delen</option>
+            <option value="Pers en media">Pers &amp; media</option>
+            <option value="Samenwerking voorstellen">Samenwerking voorstellen</option>
+            <option value="Overig">Overig</option>
+          </select>
+        </label>
+        <label class="breed">Je bericht <textarea name="bericht" placeholder="Waar kunnen we je mee helpen?" required></textarea></label>
+        <label class="breed contact-hp" aria-hidden="true">Laat dit veld leeg
+          <input type="text" name="website" tabindex="-1" autocomplete="off">
+        </label>
+        <div id="contact-fout" class="contact-fout"></div>
+        <button type="submit" class="contact-submit">Verstuur bericht</button>
+      </form>
+    </div>
+    <div id="contact-ok" class="contact-ok" role="status" tabindex="-1">
+      <div class="manifest-ok-icon" aria-hidden="true">✅</div>
+      <h3>Bedankt voor je bericht! ✊</h3>
+      <p>We hebben je bericht ontvangen en reageren zo snel mogelijk.</p>
+      <p><a href="/">← Terug naar de homepage</a></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>Buren van Artis · Amsterdam · <a href="mailto:iksteun@burenvanartis.nl">iksteun@burenvanartis.nl</a></p>
+</footer>
+
+<script src="instellingen.js"></script>
+<script src="contact-form.js"></script>
+
+</body>
+</html>

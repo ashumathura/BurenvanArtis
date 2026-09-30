@@ -8,9 +8,12 @@ Wekelijkse buurtberichten over het Masterplan van Artis — statische site voor 
 |---|---|
 | `index.html` | de berichtenfeed |
 | `doelen.html` | pagina "Onze doelen" (7 doelen + positionering) |
-| `stijl.css` | gedeelde vormgeving van beide pagina's |
+| `contact.html` | contactformulier |
+| `stijl.css` | gedeelde vormgeving van alle pagina's |
 | `instellingen.js` | alle instellingen op één plek (Tikkie, Buttondown, Supabase, planning) |
 | `posts.js` | de berichten — dit bestand bewerk je wekelijks |
+| `manifest-form.js` | logica voor het manifestformulier |
+| `contact-form.js` | logica voor het contactformulier |
 | `images/` | eigen foto's voor bij de berichten |
 
 ## Eenmalige setup
@@ -143,6 +146,62 @@ Eenmalige setup in het Supabase-dashboard:
 Het "van"-adres in de functie is `manifest@burenvanartis.nl` — dit werkt
 zodra het domein `burenvanartis.nl` geverifieerd is in Resend (SPF/DKIM),
 ongeacht welk lokaal deel je gebruikt.
+
+## Contactformulier (contact.html / en/contact.html)
+
+`Contact` staat in de navigatie naast `Onze doelen`. Het formulier vraagt
+voornaam, achternaam, e-mailadres (verplicht), een onderwerp (dropdown) en
+een vrij tekstveld. Na versturen wisselt de pagina inline naar een
+"bedankt"-blok, net als bij het manifestformulier — geen aparte pagina.
+
+SQL voor een nieuwe tabel op supabase.com (zelfde patroon als
+`manifest_handtekeningen`):
+
+```sql
+create table contact_berichten (
+  id bigint generated always as identity primary key,
+  created_at timestamptz not null default now(),
+  voornaam text not null,
+  achternaam text not null,
+  email text not null,
+  onderwerp text not null,
+  bericht text not null
+);
+alter table contact_berichten enable row level security;
+create policy "iedereen mag een bericht sturen" on contact_berichten
+  for insert with check (true);
+```
+
+Ook hier bewust geen `select`-policy: de anon-sleutel mag alleen nieuwe
+berichten toevoegen, niet de lijst met berichten uitlezen.
+
+Elk nieuw bericht wordt via een Supabase Edge Function
+(`supabase/functions/contact-melding`) doorgemaild naar
+`ashu.mathura@gmail.com`, met het e-mailadres van de afzender als reply-to
+zodat je er direct op kunt antwoorden. Onderwerp van de mail = het gekozen
+onderwerp uit de dropdown.
+
+Eenmalige setup in het Supabase-dashboard (zelfde stappen als hierboven,
+nu voor de contactmelding):
+
+1. **Edge Function aanmaken.** *Edge Functions → Deploy a new function*,
+   noem hem `contact-melding`, en plak de inhoud van
+   `supabase/functions/contact-melding/index.ts`.
+2. **Secret.** Geen nieuwe secret nodig — de functie hergebruikt dezelfde
+   `RESEND_API_KEY` die al is ingesteld voor `manifest-bevestiging`.
+3. **Database Webhook aanmaken.** *Database → Webhooks → Create a new
+   webhook*:
+   - Table: `contact_berichten`
+   - Events: `Insert`
+   - Type: `Supabase Edge Functions`
+   - Edge Function: `contact-melding`
+4. **Testen.** Stuur jezelf een testbericht via `/contact.html` en
+   controleer of de mail op `ashu.mathura@gmail.com` binnenkomt.
+
+Zodra de GitHub Action (`.github/workflows/deploy-supabase-functions.yml`)
+en de bijbehorende repo-secrets zijn ingesteld, deployt toekomstige code-
+wijzigingen aan deze functie automatisch bij een merge naar `main` — alleen
+de eenmalige stappen hierboven (tabel, webhook) blijven handmatig.
 
 ## Design v3 (juli 2026)
 
