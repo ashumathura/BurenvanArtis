@@ -332,6 +332,10 @@ footer a{color:var(--grijs-donker)}
 .hero-acties{
   display:flex; flex-wrap:wrap; gap:.6rem; align-items:center;
 }
+.hero-teller{
+  display:none; font-size:.85rem; font-weight:600;
+  color:var(--groen-donker);
+}
 
 /* ---------- manifest formulier (en het contactformulier, zelfde stijl) ---------- */
 .manifest-sectie, .contact-sectie{
