@@ -203,6 +203,58 @@ en de bijbehorende repo-secrets zijn ingesteld, deployt toekomstige code-
 wijzigingen aan deze functie automatisch bij een merge naar `main` — alleen
 de eenmalige stappen hierboven (tabel, webhook) blijven handmatig.
 
+## Privé-dashboard voor manifest-statistieken
+
+**Dit is géén website-functie.** Er is geen pagina, link of code in deze
+repository die deze data toont — de rapportage draait volledig los van de
+site, via een los proces dat rechtstreeks bij Supabase leest en de cijfers
+in een privé Claude-artifact zet (nooit op GitHub gepubliceerd).
+
+Drie rapportagefuncties geven alleen geaggregeerde aantallen terug (nooit
+namen of e-mailadressen) en worden **bewust niet aan `anon` gegeven** — de
+anon-sleutel staat namelijk al publiek in `instellingen.js`, dus alles wat
+daaraan gekoppeld is, is in de praktijk openbaar. Alleen de Supabase
+`service_role`/secret-sleutel (nooit in de browser of in deze repository,
+uitsluitend als environment-variabele bij het rapportageproces) kan ze
+aanroepen:
+
+```sql
+create or replace function manifest_per_dag()
+returns table(dag date, aantal bigint)
+language sql security definer as $$
+  select created_at::date as dag, count(*) as aantal
+  from manifest_handtekeningen
+  group by dag
+  order by dag desc;
+$$;
+
+create or replace function manifest_per_straat()
+returns table(straatnaam text, aantal bigint)
+language sql security definer as $$
+  select regexp_replace(trim(straat), '\s+\d+.*$', '') as straatnaam, count(*) as aantal
+  from manifest_handtekeningen
+  group by straatnaam
+  order by aantal desc;
+$$;
+
+create or replace function manifest_per_postcode()
+returns table(postcode text, aantal bigint)
+language sql security definer as $$
+  select upper(regexp_replace(trim(postcode), '\s+', '')) as postcode, count(*) as aantal
+  from manifest_handtekeningen
+  group by postcode
+  order by aantal desc;
+$$;
+
+grant execute on function manifest_per_dag() to service_role;
+grant execute on function manifest_per_straat() to service_role;
+grant execute on function manifest_per_postcode() to service_role;
+```
+
+`straatnaam` wordt afgeleid door het huisnummer van `straat` af te knippen
+(regex) — werkt voor de meeste adressen, met incidentele uitzonderingen
+bij ongebruikelijke notaties (bijv. "50-2" of "1A").
+
 ## Design v3 (juli 2026)
 
 - **Typografie**: Poppins (400/500/600/700) — modern geometrisch sans.
