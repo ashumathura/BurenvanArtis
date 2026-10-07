@@ -10,6 +10,9 @@
 //    tekst    template literal met dubbele witregels tussen alinea's
 //    tags     lijst hashtags, zonder #
 //    afbeelding  pad in images/ of volledige URL
+//    fotobijschrift  optioneel, klein onderschrift onder de foto
+//             (gebruik FOTO_AI of FOTO_ORIGINEEL hieronder voor
+//              consistente transparantie over AI-gebruik)
 //    knoppen  extra knoppen: { label, url }
 //             (De vaste "Help mee!"-Tikkieknop en deelknoppen
 //              staan automatisch onder elk bericht.)
@@ -17,6 +20,10 @@
 
 const MANIFEST_URL = "#manifest";  // scrollt naar het formulier op de pagina  // Manifest / Linktree
 const CONTACT_EMAIL = "iksteun@burenvanartis.nl";
+
+// Onderschriften voor foto-transparantie — hergebruikt bij meerdere berichten.
+const FOTO_AI = "ℹ️ Deze afbeelding is (deels) gemaakt met AI: een illustratie van hoe de Artis-plannen onze buurt kunnen veranderen, geen foto van de werkelijke situatie.";
+const FOTO_ORIGINEEL = "ℹ️ Onbewerkte foto, afkomstig uit de officiële documentatie van Artis (Masterplan 2030).";
 
 const POSTS = [
 
@@ -56,6 +63,7 @@ Níet voor commerciële expansie in een woonwijk!
 Deel dit bericht met uw stadsdeelbestuurder of gemeenteraadslid. Laat ze horen wat ze liever níet horen!`,
     tags: ["Amsterdam", "Stadsontwikkeling", "LeefbareStad", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post3.png",
+    fotobijschrift: FOTO_AI,
     knoppen: []
   },
 
@@ -134,6 +142,7 @@ Buren van Artis roept de gemeente op: toets de Artis-plannen nu écht op massa, 
 Deel dit bericht als u genoeg heeft van greenwashing ten koste van de Plantagebuurt!`,
     tags: ["Entrepotdok", "MasterplanArtis", "Stadsontwikkeling", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post6.png",
+    fotobijschrift: FOTO_ORIGINEEL,
     knoppen: []
   },
 
@@ -152,6 +161,7 @@ Als Artis deze grenzen niet respecteert, komen er de volgende jaren ongetwijfeld
 TEKEN HET MANIFEST NÚ!`,
     tags: ["Plantagebuurt", "LeefbareStad", "MasterplanArtis", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post2.png",
+    fotobijschrift: FOTO_AI,
     knoppen: [{ label: "Teken het Manifest nú!", url: MANIFEST_URL }]
   },
 
@@ -172,6 +182,7 @@ De Buren van Artis pleiten voor onafhankelijke contra-expertise: uitgebreid onde
 Wilt u dat ook? Meld u aan onderaan de pagina!`,
     tags: ["Plantagebuurt", "Amsterdam", "LeefbareStad", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post4.png",
+    fotobijschrift: FOTO_AI,
     knoppen: []
   },
 
@@ -188,6 +199,7 @@ Alle buren krijgen ermee te maken: meer drukte, meer auto's, meer fietsen op de 
 Kom op voor ons gezamenlijk belang! Teken het manifest.`,
     tags: ["Participatie", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post12.png",
+    fotobijschrift: FOTO_AI,
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
@@ -210,6 +222,7 @@ NB: voor de gemiddelde Amsterdammer wordt Artis steeds onbereikbaarder. Véél t
 Wij vragen de gemeente: geef Artis niet voortdurend haar zin! En check héél goed wat alle grote plannen betekenen voor de Amsterdammers in de buurt.`,
     tags: ["MasterplanArtis", "Amsterdam", "Plantagebuurt", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post11.png",
+    fotobijschrift: FOTO_AI,
     knoppen: []
   },
 
@@ -230,6 +243,7 @@ Maar wij willen keiharde garanties dat het getackeld wordt.
 Voorkom dat je straks zelf met de bewijslast zit! Teken het manifest.`,
     tags: ["Entrepotdok", "MasterplanArtis", "LeefbareStad", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post5.png",
+    fotobijschrift: FOTO_AI,
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
@@ -265,6 +279,7 @@ Was dit niet allereerst een DIERENpark?
 De Buren van Artis trekken aan de bel: wil Amsterdam dit écht? Een grotendeels 19e-eeuwse wijk met een gigantische stenen vesting als middelpunt? Ten koste van Amsterdammers die hier wónen?`,
     tags: ["Entrepotdok", "MasterplanArtis", "Stadsontwikkeling", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post9.png",
+    fotobijschrift: FOTO_ORIGINEEL,
     knoppen: []
   },
 
@@ -281,6 +296,7 @@ Maar bij elke restauratie staat ook een horecagelegenheid of een kantoorfunctie 
 Artis' huishoudboekje rust zwaar op commerciële exploitatie. Méér bezoekers, meer horeca, meer kantoorruimte voor verhuur.`,
     tags: ["Artis", "MasterplanArtis", "Amsterdam", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post8.png",
+    fotobijschrift: FOTO_AI,
     knoppen: []
   },
 
@@ -319,6 +335,7 @@ De akoestiek van boten, terrassen en verkeer op de kade zal daardoor sterk verst
 Onze vraag: een onafhankelijk akoestisch onderzoek vóórdat de bouw onherroepelijk is. Vraag maar — of wij vragen het straks voor jouw slaapkamer.`,
     tags: ["Entrepotdok", "LeefbareStad", "MasterplanArtis", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post6.png",
+    fotobijschrift: FOTO_ORIGINEEL,
     knoppen: []
   },
 
@@ -339,6 +356,7 @@ Wij vragen niet om beloftes. Wij eisen meetgaranties in het masterplan, met sanc
 Verduurzaming steunen we volledig. Slaaploos wakker liggen aan een mug die nooit weggaat: niet.`,
     tags: ["Plantagebuurt", "LeefbareStad", "MasterplanArtis", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post5.png",
+    fotobijschrift: FOTO_AI,
     knoppen: []
   },
 
@@ -359,6 +377,7 @@ De Kalverstraat kan 60.000 bezoekers op een zaterdag verwerken omdat er brede st
 Onze vraag: onafhankelijke contra-expertise op de verkeersparagraaf van Masterplan 2030. Meld je aan onderaan de pagina — dan hoor je wanneer we die stap zetten.`,
     tags: ["Plantagebuurt", "Amsterdam", "LeefbareStad", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post4.png",
+    fotobijschrift: FOTO_AI,
     knoppen: []
   },
 
@@ -377,6 +396,7 @@ Onze wijk is niet gebouwd op continue festivalstromen. Wat we missen in Masterpl
 Herken je dit al? Geef een +1 en deel het bericht met één buur. Straks doen we het samen. Alleen samen kunnen we er iets aan doen.`,
     tags: ["Plantagebuurt", "Amsterdam", "MasterplanArtis", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post3.png",
+    fotobijschrift: FOTO_AI,
     knoppen: []
   },
 
@@ -393,6 +413,7 @@ In Masterplan 2030 wordt de aanname van 2 miljoen bezoekers gebruikt om hoogbouw
 Ken jij iemand die om de hoek van Artis woont, of vroeger woonde? Stuur ze dit bericht door. Iedereen moet weten wat er aankomt. Wie zwijgt stemt toe.`,
     tags: ["Artis", "MasterplanArtis", "Stadsontwikkeling", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post2.png",
+    fotobijschrift: FOTO_AI,
     knoppen: []
   },
 
