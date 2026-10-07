@@ -105,6 +105,7 @@ De buurt heeft alternatieven aangedragen, waar Artis niet voor openstaat. Artis 
 Onderteken het Manifest! Steun de WKO, maar kom in actie tegen nodeloze hoogbouw!`,
     tags: ["MasterplanArtis", "Entrepotdok", "LeefbareStad", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post16.png",
+    fotobijschrift: FOTO_ORIGINEEL,
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
