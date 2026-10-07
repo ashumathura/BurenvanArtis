@@ -100,6 +100,26 @@ Onderteken het Manifest! Steun de WKO, maar kom in actie tegen nodeloze hoogbouw
     knoppen: [{ label: "Teken het Manifest", url: MANIFEST_URL }]
   },
 
+  // ---------- POST 14b — Hoogte Kadijk (Het Parool) ----------
+  {
+    id: "2026-10-07",
+    datum: "2026-10-07",
+    titel: "Het Parool: 'De buurt had gelijk' over de nieuwbouw aan de Hoogte Kadijk. Maar toen stonden de gebouwen er al.",
+    tekst:
+`Een lomp woonblok dat doorzichten blokkeert. Een monumentale brug die in de verdrukking komt. Beloofde sociale huurwoningen die ineens studentenkamers blijken. Het Parool noemt het gewoon bij naam: 'de buurt had gelijk.'
+
+Jarenlang voerden omwonenden bezwaar tegen de nieuwbouw op werf Koning William aan de Hoogte Kadijk — bezwaarschriften, procedures tot aan de Raad van State, talloze petities aan de gemeente. Tevergeefs. De bebouwing ging gewoon door.
+
+Nu de gebouwen er staan, concludeert de architectuurcriticus droogjes: de buurt had gelijk. Doorzichten richting de Oosterkerk zijn dichtgezet, de monumentale ijzeren brug bij het Kadijkseiland komt in de verdrukking, en de beloofde sociale huurwoningen blijken inmiddels gevuld te worden met studenten en promovendi. Zelfs de gedroomde openbare ruimte tussen de gebouwen staat inmiddels achter een hek.
+
+Dit is precies waar wij voor waarschuwen. Bezwaren die serieus klinken op een inspraakavond, maar niets veranderen aan de bouwtekeningen. En zodra de eerste paal de grond in gaat, is er geen weg meer terug — dan leef je er de rest van je leven mee.
+
+Lees het volledige artikel in Het Parool (link hieronder). En teken het Manifest, vóórdat we over Artis hetzelfde verhaal moeten navertellen.`,
+    tags: ["Stadsontwikkeling", "Participatie", "MasterplanArtis", "BurenVanArtis"],
+    afbeelding: "https://picsum.photos/seed/hoogtekadijk/1200/900",
+    knoppen: [{ label: "Lees het artikel in Het Parool", url: "VUL-HIER-DE-PAROOL-LINK-IN" }]
+  },
+
   // ---------- POST 14 — Groenwassen ----------
   {
     id: "2026-10-06",
