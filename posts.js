@@ -116,8 +116,8 @@ Dit is precies waar wij voor waarschuwen. Bezwaren die serieus klinken op een in
 
 Lees het volledige artikel in Het Parool (link hieronder). En teken het Manifest, vóórdat we over Artis hetzelfde verhaal moeten navertellen.`,
     tags: ["Stadsontwikkeling", "Participatie", "MasterplanArtis", "BurenVanArtis"],
-    afbeelding: "https://picsum.photos/seed/hoogtekadijk/1200/900",
-    knoppen: [{ label: "Lees het artikel in Het Parool", url: "VUL-HIER-DE-PAROOL-LINK-IN" }]
+    afbeelding: "https://www.burenvanartis.nl/images/post14b.png",
+    knoppen: [{ label: "Lees het artikel in Het Parool", url: "https://www.parool.nl/amsterdam/de-buurt-had-gelijk-lomp-woonblok-aan-de-hoogte-kadijk-blokkeert-doorzichten-en-verdrukt-brug~b2ada9fbc/" }]
   },
 
   // ---------- POST 14 — Groenwassen ----------
