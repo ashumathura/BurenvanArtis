@@ -62,7 +62,9 @@ zichtbaar.forEach(post => {
         allow="accelerometer; encrypted-media; picture-in-picture"></iframe>
     </div></div>`;
   } else if (post.afbeelding) {
-    media = `<div class="kaart-media"><img src="${post.afbeelding}" alt="Buren van Artis — ${escapeHtml(post.titel)}" loading="lazy"></div>`;
+    const bijschrift = post.fotobijschrift
+      ? `<p class="foto-bijschrift">${escapeHtml(post.fotobijschrift)}</p>` : "";
+    media = `<div class="kaart-media"><img src="${post.afbeelding}" alt="Buren van Artis — ${escapeHtml(post.titel)}" loading="lazy">${bijschrift}</div>`;
   }
 
   const alineas = (post.tekst || "").split("\n\n").map(a => `<p>${escapeHtml(a).replace(/\n/g, "<br>")}</p>`).join("");
