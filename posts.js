@@ -69,23 +69,26 @@ Deel dit bericht met uw stadsdeelbestuurder of gemeenteraadslid. Laat ze horen w
 
   // ---------- POST 16 — Participatie ----------
   {
-    id: "2026-10-20",
-    datum: "2026-10-20",
+    id: "2026-10-12",
+    datum: "2026-10-12",
     titel: "Buurtbewoners zien geen verbetering van de plannen. Tóch gaan ze door!",
     tekst:
 `Artis heeft een extern bureau ingeschakeld om het participatieproces rond Masterplan 2030 te begeleiden. 'Artis heeft zijn best gedaan,' meent dit bureau.
 
-De buurtbewoners op de laatste Artis-bijeenkomst voor de buurt hadden een andere ervaring. Zij vonden de plannen zelfs verslechterd.
+Vanaf het begin vroegen wij om een open gesprek met de directie van Artis. Rechtstreeks, en via anderen. Telkens weer. De deur bleef dicht.
 
-Artis presenteerde een typisch staaltje schijnparticipatie: de buurt mag meepraten over de kleur van de bakstenen en de begroeiing, maar níet over de hoogte van gebouwen.
+Enkelen van ons zitten inmiddels in de participatiegroep van Artis. Die gaat over het proces van participatie, niet over de inhoud van de plannen. Op het proces werkt Artis keurig mee. Op de inhoud zien wij, ook daar, nauwelijks beweging.
+
+De buurtbewoners op de laatste Artis-bijeenkomst voor de buurt hadden een andere ervaring dan het externe bureau. Zij vonden de plannen zelfs verslechterd.
+
+Artis presenteerde een typisch staaltje schijnparticipatie: de buurt mag meepraten over de kleur van de bakstenen en de begroeiing, maar níet over de hoogte van gebouwen. En het liefst bespreekt Artis elk onderdeel apart — nooit het geheel, en dus nooit wat al die plannen sámen voor de buurt betekenen.
 
 Ondertussen worden de hoofdlijnen van het Masterplan doorgezet. De hoogbouw aan de randen van het park komt eraan…
-Laat dat niet gebeuren!
 
-Mail uw ervaringen met de participatie en uw mening over de plannen naar ${CONTACT_EMAIL}`,
+Deel uw ervaringen met de participatie en uw mening over de plannen via ons contactformulier.`,
     tags: ["Participatie", "MasterplanArtis", "Plantagebuurt", "BurenVanArtis"],
     afbeelding: "https://www.burenvanartis.nl/images/post13.png",
-    knoppen: []
+    knoppen: [{ label: "Naar het contactformulier", url: "/contact.html" }]
   },
 
   // ---------- POST 15 — WKO / douches (Manifest) ----------
