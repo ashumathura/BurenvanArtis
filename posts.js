@@ -90,17 +90,23 @@ Mail uw ervaringen met de participatie en uw mening over de plannen naar ${CONTA
 
   // ---------- POST 15 — WKO / douches (Manifest) ----------
   {
-    id: "2026-10-13",
-    datum: "2026-10-13",
+    id: "2026-10-09",
+    datum: "2026-10-09",
     titel: "Van het gas af? Prima idee! Maar waarom moeten alle personeelsvoorzieningen in zo'n kolossaal gebouw?",
     tekst:
 `De geplande WKO-installatie zorgt ervoor dat Artis in 2030 van het gas af kan. Extra personeelsvoorzieningen zijn blijkbaar nodig.
 Maar waarom in zo'n mega-gebouw?
 
-Deze nieuwe kolos werpt straks schaduw over úw kade, úw ontbijttafel en úw zomeravond.
+Het probleem is het stapelen van functies: alles wordt ondergebracht op één plek, in één massaal gebouw. Efficiënt voor Artis, misschien — niet voor de buurt.
+
+Want al die functies op één plek betekent ook al het verkeer op één plek. Meer vrachtverkeer van en naar dit gebouw, dat de Sarphati-fietssnelweg gebruikt en kruist, op het drukste en gevaarlijkste punt, met de Entrepotdok fietsroute.
+
+Deze nieuwe kolos van 14 meter hoog werpt straks ook schaduw over úw kade.
 Een precedent, vrezen wij. Als het in één hoek van Artis mag, mag het straks dan overal?
 
 De buurt heeft alternatieven aangedragen, waar Artis niet voor openstaat. Artis beschouwt 'het gesprek' over het WKO/Dienstengebouw als afgesloten. Wíj niet!
+
+Wij vragen Artis om een onafhankelijk verkeersonderzoek te laten uitvoeren: breng de gevolgen voor de buurt en de risico's voor fietsers in kaart, vóórdat er wordt gebouwd.
 
 Onderteken het Manifest! Steun de WKO, maar kom in actie tegen nodeloze hoogbouw!`,
     tags: ["MasterplanArtis", "Entrepotdok", "LeefbareStad", "BurenVanArtis"],
