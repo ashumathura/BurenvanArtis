@@ -20,6 +20,7 @@
 (function(){
   try {
     if (/bot|crawler|spider|preview|lighthouse/i.test(navigator.userAgent)) return;
+    if (location.hash) return; // deeplink naar een sectie/bericht: taal niet omleiden, anders gaat de hash verloren
     var keuze = localStorage.getItem("taal");
     if (keuze === "nl") return;
     if (keuze === "en") { location.replace("/en/"); return; }
