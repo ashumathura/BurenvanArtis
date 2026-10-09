@@ -121,6 +121,16 @@ if (heroTikkie) {
   });
 }
 
+// Reactie-sectie (brief Artis) — deel-knoppen koppelen aan een deeplink
+const reactieWhatsapp = document.getElementById("reactie-deel-whatsapp");
+const reactieEmail = document.getElementById("reactie-deel-email");
+if (reactieWhatsapp || reactieEmail) {
+  const reactieUrl = location.origin + location.pathname + "#reactie-brief-artis";
+  const reactieTitel = "Onze reactie op de brief van Artis — Buren van Artis";
+  if (reactieWhatsapp) reactieWhatsapp.href = `https://wa.me/?text=${encodeURIComponent(reactieTitel + "\n" + reactieUrl)}`;
+  if (reactieEmail) reactieEmail.href = `mailto:?subject=${encodeURIComponent(reactieTitel)}&body=${encodeURIComponent("Deze reactie van Buren van Artis op de brief van Artis is misschien interessant voor je:\n\n" + reactieUrl)}`;
+}
+
 // ---------- JSON-LD structured data voor alle berichten (SEO) ----------
 (function emitPostSchema(){
   const base = location.origin + location.pathname;
