@@ -444,3 +444,97 @@ footer a{color:var(--grijs-donker)}
   .manifest-grid, .contact-grid{grid-template-columns:1fr}
   .manifest-sectie, .contact-sectie{padding:1.6rem 1.25rem}
 }
+
+/* ---------- reactie-sectie (reactie op brief Artis, boven de feed) ---------- */
+.reactie-sectie{
+  background:var(--wit); border:1px solid var(--grijs-licht); border-radius:var(--radius);
+  padding:1.8rem 1.6rem; margin:1.5rem 0; box-shadow:var(--schaduw);
+}
+.reactie-sectie h2{
+  font-weight:700; font-size:1.5rem; line-height:1.25; margin:0 0 .9rem;
+  color:var(--groen-diep); letter-spacing:-.01em;
+}
+.reactie-sectie p{margin:0 0 .8rem; color:var(--grijs-donker); font-size:.95rem; line-height:1.6}
+.reactie-subkop{margin-top:1.3rem; padding-top:1.2rem; border-top:1px solid var(--grijs-licht)}
+.brief-link{
+  display:inline-flex; align-items:center; gap:.4rem; text-decoration:none;
+  font-weight:600; font-size:.92rem; color:var(--groen-diep);
+  background:var(--groen-licht); padding:.55rem 1rem; border-radius:999px;
+  margin:.2rem 0 1.3rem; transition:background .15s;
+}
+.brief-link:hover{background:var(--groen)}
+
+.reactie-toggle{
+  display:flex; align-items:center; justify-content:center; gap:.4rem;
+  list-style:none; cursor:pointer; width:100%;
+  font-family:'Poppins',sans-serif; font-weight:600; font-size:.95rem;
+  padding:.85rem 1.2rem; border-radius:999px; border:1.5px solid var(--groen-donker);
+  background:var(--wit); color:var(--groen-donker); margin-top:.3rem;
+}
+.reactie-toggle::-webkit-details-marker{display:none}
+.reactie-toggle .toon-open{display:none}
+details[open] .reactie-toggle .toon-dicht{display:none}
+details[open] .reactie-toggle .toon-open{display:inline}
+details[open] .reactie-toggle{
+  background:var(--grijs-lichter); color:var(--grijs-donker); border-color:var(--grijs-licht);
+}
+
+.punten{display:flex; flex-direction:column; gap:1.8rem; margin:1.4rem 0 2rem}
+.punt{padding-top:1.6rem; border-top:1px solid var(--grijs-licht)}
+.punt-kop{display:flex; align-items:center; gap:.8rem; margin:0 0 .9rem}
+.punt-nummer{
+  flex-shrink:0; width:2.3rem; height:2.3rem; border-radius:50%;
+  background:var(--groen-licht); color:var(--groen-diep);
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:1.05rem;
+}
+.punt-kop h3{margin:0; font-size:1.1rem; font-weight:700; color:var(--tekst); letter-spacing:-.005em}
+
+.reactie-sectie .label{
+  display:block; font-weight:600; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+  margin:0 0 .4rem;
+}
+.label-artis{color:var(--grijs)}
+.label-lezen{color:var(--grijs); margin-top:1rem}
+.label-vragen{color:var(--groen-diep); margin-top:1rem}
+
+.reactie-sectie blockquote{
+  margin:0 0 .2rem; padding:.7rem 1rem; background:var(--grijs-lichter);
+  border-left:3px solid var(--groen-donker); border-radius:0 8px 8px 0;
+  font-style:italic;
+}
+.reactie-sectie blockquote p{margin:0 0 .35rem}
+.reactie-sectie blockquote p:last-child{margin-bottom:0}
+
+.reactie-sectie .lijst{margin:.5rem 0 .8rem; padding-left:1.3rem; color:var(--grijs-donker); font-size:.95rem}
+.reactie-sectie .lijst li{margin-bottom:.3rem}
+
+/* geciteerde passages uit officiële (WOO-)documenten — bewust anders dan "Artis zegt" */
+.bron{
+  background:var(--grijs-lichter); color:var(--tekst); font-style:normal; font-weight:500;
+  padding:.05em .45em; border-radius:5px; border:1px solid var(--grijs-licht);
+  box-decoration-break:clone; -webkit-box-decoration-break:clone;
+}
+
+.vraag-blok{
+  background:var(--groen-licht); color:var(--groen-diep);
+  border-radius:var(--radius-klein); padding:.8rem 1.1rem;
+  font-weight:600; font-size:.95rem; margin-top:.3rem;
+}
+
+.slot{padding-top:1.6rem; border-top:1px solid var(--grijs-licht)}
+.slot h3{font-size:1.1rem; font-weight:700; color:var(--tekst); margin:0 0 .9rem}
+.ondertekening{font-weight:600; color:var(--tekst); margin-top:1rem}
+
+.knop-outline{background:var(--wit); color:var(--groen-diep); border:1.5px solid var(--groen-licht)}
+.knop-outline:hover{background:var(--groen-licht); color:var(--groen-diep)}
+
+.deel-rij{
+  display:flex; align-items:center; flex-wrap:wrap; gap:.6rem;
+  margin-top:1.4rem; padding-top:1.2rem; border-top:1px solid var(--grijs-licht);
+}
+.deel-label{font-size:.85rem; color:var(--grijs-donker); font-weight:500}
+
+@media (max-width:520px){
+  .reactie-sectie{padding:1.5rem 1.25rem}
+}
