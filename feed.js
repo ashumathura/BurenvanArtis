@@ -131,6 +131,23 @@ if (reactieWhatsapp || reactieEmail) {
   if (reactieEmail) reactieEmail.href = `mailto:?subject=${encodeURIComponent(reactieTitel)}&body=${encodeURIComponent("Deze reactie van Buren van Artis op de brief van Artis is misschien interessant voor je:\n\n" + reactieUrl)}`;
 }
 
+// E-mail delen: kopieer de tekst naar het klembord als extra terugvalmogelijkheid,
+// want mailto: doet zonder gekoppeld e-mailprogramma (vaak op desktop) niets zichtbaar.
+document.addEventListener("click", e => {
+  const link = e.target.closest('a.deel[href^="mailto:"]');
+  if (!link || !navigator.clipboard) return;
+  try {
+    const params = new URLSearchParams(new URL(link.href).search);
+    const tekst = [params.get("subject"), params.get("body")].filter(Boolean).join("\n\n");
+    if (!tekst) return;
+    navigator.clipboard.writeText(tekst).then(() => {
+      const origineel = link.textContent;
+      link.textContent = PAGINA_TAAL === "en" ? "✓ Copied" : "✓ Gekopieerd";
+      setTimeout(() => { link.textContent = origineel; }, 2000);
+    }).catch(() => {});
+  } catch(err) {}
+});
+
 // ---------- JSON-LD structured data voor alle berichten (SEO) ----------
 (function emitPostSchema(){
   const base = location.origin + location.pathname;
